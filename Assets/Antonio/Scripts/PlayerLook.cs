@@ -6,7 +6,7 @@ public class PlayerLook : MonoBehaviour
 {
     private Transform CharacterTransform;
 
-    private float mouseSensitivity = 80.0f;
+    [SerializeField]private float mouseSensitivity = 80.0f;
     private float clampAngle = 87.5f;
     private float smoothTime = 8.5f;
 

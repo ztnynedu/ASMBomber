@@ -26,8 +26,8 @@ public class PlayerMovement : MonoBehaviour
     private float strikingJumpSpeed = 0.0f;
 
     //Dodging Slash floats
-    private float dodgingSlashSpeed = 75f;
-    private float dodgingJumpSpeed = 10f;
+    private float dodgingSlashSpeed = 50f;
+    private float dodgingJumpSpeed = 5f;
 
     //Slamming Stab floats 
     private float slammingStabSpeed = 25f;
@@ -41,13 +41,6 @@ public class PlayerMovement : MonoBehaviour
     private float slammingUppercutSpeed = 50f;
 
     #endregion
-
-    private bool tailSlashPossible = true;
-    private bool tailUppercutPossible = true;
-    private bool tailStabPossible;
-
-    private int currentSlashComboCount = 0;
-    private int maxSlashCombo = 3;
 
 
     // Use this for initialization
@@ -71,8 +64,6 @@ public class PlayerMovement : MonoBehaviour
         if(PlayerController.isGrounded)
         {
             GroundedMovement();
-
-            currentSlashComboCount = 0;
         }
 
         if(specialMoveRechargeTimeTimer >= specialMoveRechargeTime)
@@ -89,26 +80,16 @@ public class PlayerMovement : MonoBehaviour
         //Tail Slash
         if(Input.GetKeyDown(KeyCode.LeftShift))
         {
-            if(tailSlashPossible == true && currentSlashComboCount < maxSlashCombo)
-            {
-                specialMoveRechargeTimeTimer = 0;
+            specialMoveRechargeTimeTimer = 0;
 
-                currentSlashComboCount += 1;
-
-                DodgingSlash();              
-            }
+            DodgingSlash();
         }
 
         else if(Input.GetKeyDown(KeyCode.Space))
         {
-            if(tailUppercutPossible == true)
-            {
-                specialMoveRechargeTimeTimer = 0;
+            specialMoveRechargeTimeTimer = 0;
 
-                currentSlashComboCount = 0;
-
-                JumpingUppercut();
-            }
+            JumpingUppercut();
         }
     }
 
