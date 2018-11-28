@@ -65,6 +65,29 @@
     <Compile Include="Assets\Antonio\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\com\heparo\terrain\toolkit\scripts\TerrainToolkit.cs" />
     <Compile Include="Assets\Emilio\Scripts\menu_MenuFunctionality.cs" />
+    <Compile Include="Assets\Linhi Character\Cameras\Scripts\AbstractTargetFollower.cs" />
+    <Compile Include="Assets\Linhi Character\Cameras\Scripts\AutoCam.cs" />
+    <Compile Include="Assets\Linhi Character\Cameras\Scripts\FreeLookCam.cs" />
+    <Compile Include="Assets\Linhi Character\Cameras\Scripts\HandHeldCam.cs" />
+    <Compile Include="Assets\Linhi Character\Cameras\Scripts\LookatTarget.cs" />
+    <Compile Include="Assets\Linhi Character\Cameras\Scripts\PivotBasedCameraRig.cs" />
+    <Compile Include="Assets\Linhi Character\Cameras\Scripts\ProtectCameraFromWallClip.cs" />
+    <Compile Include="Assets\Linhi Character\Cameras\Scripts\TargetFieldOfView.cs" />
+    <Compile Include="Assets\Linhi Character\CrossPlatformInput\Scripts\AxisTouchButton.cs" />
+    <Compile Include="Assets\Linhi Character\CrossPlatformInput\Scripts\ButtonHandler.cs" />
+    <Compile Include="Assets\Linhi Character\CrossPlatformInput\Scripts\CrossPlatformInputManager.cs" />
+    <Compile Include="Assets\Linhi Character\CrossPlatformInput\Scripts\InputAxisScrollbar.cs" />
+    <Compile Include="Assets\Linhi Character\CrossPlatformInput\Scripts\Joystick.cs" />
+    <Compile Include="Assets\Linhi Character\CrossPlatformInput\Scripts\MobileControlRig.cs" />
+    <Compile Include="Assets\Linhi Character\CrossPlatformInput\Scripts\PlatformSpecific\MobileInput.cs" />
+    <Compile Include="Assets\Linhi Character\CrossPlatformInput\Scripts\PlatformSpecific\StandaloneInput.cs" />
+    <Compile Include="Assets\Linhi Character\CrossPlatformInput\Scripts\TiltInput.cs" />
+    <Compile Include="Assets\Linhi Character\CrossPlatformInput\Scripts\TouchPad.cs" />
+    <Compile Include="Assets\Linhi Character\CrossPlatformInput\Scripts\VirtualInput.cs" />
+    <Compile Include="Assets\Linhi Character\Scrips\ChanceWeapon.cs" />
+    <Compile Include="Assets\Linhi Character\Scrips\Player.cs" />
+    <Compile Include="Assets\Linhi Character\Scrips\ThirdPersonCharacter.cs" />
+    <Compile Include="Assets\Linhi Character\Scrips\ThirdPersonUserControl.cs" />
     <Compile Include="Assets\TerrainComposer2\Scripts\Generate\EditorCoroutine.cs" />
     <Compile Include="Assets\TerrainComposer2\Scripts\Generate\TC_AnimateNode.cs" />
     <Compile Include="Assets\TerrainComposer2\Scripts\Generate\TC_AnimateTransform.cs" />
@@ -125,8 +148,11 @@
     <Compile Include="Assets\TerrainComposer2\Scripts\Tools\TC_Reporter.cs" />
     <Compile Include="Assets\TerrainComposer2\Scripts\Tools\TC_SpawnTerrainHeight.cs" />
     <None Include="Assets\TerrainComposer2\Shaders\Compute\TC_Noise.cginc" />
+    <None Include="Assets\Linhi Character\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
+    <None Include="Assets\Linhi Character\Shaders\Standard.shader" />
     <None Include="Assets\TerrainComposer2\Defaults\ProjectorAdditive.shader" />
     <None Include="Assets\TerrainComposer2\Shaders\Compute\TC_NoisesAdvanced.cginc" />
+    <None Include="Assets\Linhi Character\Cameras\CameraGuidelines.txt" />
     <None Include="Assets\TerrainComposer2\Shaders\Compute\FlattenTerrain.shader" />
     <None Include="Assets\TerrainComposer2\Shaders\Compute\TC_Noise2.cginc" />
     <None Include="Assets\TerrainComposer2\Shaders\Compute\TC_Compute.compute" />
@@ -346,6 +372,9 @@
     </Reference>
     <Reference Include="UnityEngine.StandardEvents">
       <HintPath>C:/Users/Tobby/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.13/UnityEngine.StandardEvents.dll</HintPath>
+    </Reference>
+    <Reference Include="DynamicBone">
+      <HintPath>C:/Users/Tobby/Documents/GitHub/ASMBomber/Assets/Linhi Character/DynamicBone/DynamicBone.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.16f1/Editor/Data/MonoBleedingEdge/lib/mono/unity/mscorlib.dll</HintPath>
