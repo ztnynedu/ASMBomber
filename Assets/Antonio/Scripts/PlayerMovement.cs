@@ -21,21 +21,14 @@ public class PlayerMovement : MonoBehaviour
     private float groundedStandardSpeed = 7.5F;
     private float groundedSpecialSpeed = 13.0f;
 
-    //Striking Slash floats
-    private float strikingSlashSpeed = 35f;
-    private float strikingJumpSpeed = 0.0f;
-
     //Dodging Slash floats
-    private float dodgingSlashSpeed = 50f;
-    private float dodgingJumpSpeed = 5f;
+    private float dodgeDistance = 50f;
+    private float dodgeSpeed = 5f;
 
-    //Slamming Stab floats 
-    private float slammingStabSpeed = 25f;
-    private float fallingStabSpeed = 100f;
 
     //Jumping Uppercut floats
-    private float uppercutFlyingSpeed = 0;
-    private float uppercutJumpSpeed = 25f;
+    private float jumpDistance = 0;
+    private float jumpSpeed = 25f;
 
     //Slamming Uppercut floats
     private float slammingUppercutSpeed = 50f;
@@ -68,28 +61,27 @@ public class PlayerMovement : MonoBehaviour
 
         if(specialMoveRechargeTimeTimer >= specialMoveRechargeTime)
         {
-            CheckSpecialInputs();
+            Inputs();
         }
 
         moveDirection.y -= gravity * Time.deltaTime;
         PlayerController.Move(moveDirection * Time.deltaTime);
     }
 
-    private void CheckSpecialInputs()
+    private void Inputs()
     {
-        //Tail Slash
         if(Input.GetKeyDown(KeyCode.LeftShift))
         {
             specialMoveRechargeTimeTimer = 0;
 
-            DodgingSlash();
+            Dodge();
         }
 
         else if(Input.GetKeyDown(KeyCode.Space))
         {
             specialMoveRechargeTimeTimer = 0;
 
-            JumpingUppercut();
+            Jump();
         }
     }
 
@@ -100,14 +92,14 @@ public class PlayerMovement : MonoBehaviour
         moveDirection *= groundedStandardSpeed;
     }
 
-    private void DodgingSlash()
+    private void Dodge()
     {
-        DoSpecialMove(dodgingSlashSpeed, dodgingJumpSpeed);
+        DoSpecialMove(dodgeDistance, dodgeSpeed);
     }
 
-    private void JumpingUppercut()
+    private void Jump()
     {
-        DoSpecialMove(uppercutFlyingSpeed, uppercutJumpSpeed);
+        DoSpecialMove(jumpDistance, jumpSpeed);
     }
 
     private void DoSpecialMove(float speed, float ySpeed)
