@@ -61,8 +61,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Antonio\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Antonio\Scripts\PlayerLook.cs" />
-    <Compile Include="Assets\Antonio\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\com\heparo\terrain\toolkit\scripts\TerrainToolkit.cs" />
     <Compile Include="Assets\Emilio\Scripts\menu_MenuFunctionality.cs" />
     <Compile Include="Assets\Linhi Character\Cameras\Scripts\AbstractTargetFollower.cs" />
