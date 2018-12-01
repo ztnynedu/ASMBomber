@@ -23,7 +23,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>Temp\bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_2_16;UNITY_2018_2;UNITY_2018;PLATFORM_ARCH_64;UNITY_64;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITES;ENABLE_GRID;ENABLE_TILEMAP;ENABLE_TERRAIN;ENABLE_TEXTURE_STREAMING;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_VIDEO;ENABLE_PACKMAN;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_LOCALIZATION;PLATFORM_STANDALONE_WIN;PLATFORM_STANDALONE;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_OUT_OF_PROCESS_CRASH_HANDLER;ENABLE_EVENT_QUEUE;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;ENABLE_VR;ENABLE_AR;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_2_0_SUBSET;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_VSTU</DefineConstants>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_2_16;UNITY_2018_2;UNITY_2018;PLATFORM_ARCH_64;UNITY_64;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITES;ENABLE_GRID;ENABLE_TILEMAP;ENABLE_TERRAIN;ENABLE_TEXTURE_STREAMING;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_VIDEO;ENABLE_PACKMAN;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_LOCALIZATION;PLATFORM_STANDALONE_WIN;PLATFORM_STANDALONE;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_OUT_OF_PROCESS_CRASH_HANDLER;ENABLE_EVENT_QUEUE;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;ENABLE_VR;ENABLE_AR;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_2_0_SUBSET;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_VSTU;WEATHER_MAKER_PRESENT</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169</NoWarn>
@@ -147,27 +147,163 @@
     <Compile Include="Assets\TerrainComposer2\Scripts\Tools\TC_MeasureTerrains.cs" />
     <Compile Include="Assets\TerrainComposer2\Scripts\Tools\TC_Reporter.cs" />
     <Compile Include="Assets\TerrainComposer2\Scripts\Tools\TC_SpawnTerrainHeight.cs" />
+    <Compile Include="Assets\WeatherMaker\Demo\DemoResources\Scripts\WeatherMakerDemoNoiseScript.cs" />
+    <Compile Include="Assets\WeatherMaker\Demo\DemoResources\Scripts\WeatherMakerDemoScript2D.cs" />
+    <Compile Include="Assets\WeatherMaker\Demo\DemoResources\Scripts\WeatherMakerDemoScriptCloudMask.cs" />
+    <Compile Include="Assets\WeatherMaker\Demo\DemoResources\Scripts\WeatherMakerDemoScriptSpotlightRotate.cs" />
+    <Compile Include="Assets\WeatherMaker\Demo\DemoResources\Scripts\WeatherMakerLightToSunIntensityScript.cs" />
+    <Compile Include="Assets\WeatherMaker\Demo\DemoResources\Scripts\WeatherMakerNetworkDemoPlayerScript.cs" />
+    <Compile Include="Assets\WeatherMaker\Prefab\Scripts\Clouds\WeatherMakerCloudLayerProfileScript.cs" />
+    <Compile Include="Assets\WeatherMaker\Prefab\Scripts\Clouds\WeatherMakerCloudProfileScript.cs" />
+    <Compile Include="Assets\WeatherMaker\Prefab\Scripts\Clouds\WeatherMakerCloudShadowProjectorScript.cs" />
+    <Compile Include="Assets\WeatherMaker\Prefab\Scripts\Clouds\WeatherMakerFullScreenCloudsScript.cs" />
+    <Compile Include="Assets\WeatherMaker\Prefab\Scripts\Clouds\WeatherMakerLegacyCloudScript2D.cs" />
+    <Compile Include="Assets\WeatherMaker\Prefab\Scripts\Extensions\WeatherMakerExtensionAquasScript.cs" />
+    <Compile Include="Assets\WeatherMaker\Prefab\Scripts\Extensions\WeatherMakerExtensionCtsScript.cs" />
+    <Compile Include="Assets\WeatherMaker\Prefab\Scripts\Extensions\WeatherMakerExtensionGaiaScript.cs" />
+    <Compile Include="Assets\WeatherMaker\Prefab\Scripts\Extensions\WeatherMakerExtensionRainSnowSeasonScript.cs" />
+    <Compile Include="Assets\WeatherMaker\Prefab\Scripts\Extensions\WeatherMakerExtensionRtpTerrainScript.cs" />
+    <Compile Include="Assets\WeatherMaker\Prefab\Scripts\Extensions\WeatherMakerExtensionScript.cs" />
+    <Compile Include="Assets\WeatherMaker\Prefab\Scripts\Extensions\WeatherMakerExtensionUberScript.cs" />
+    <Compile Include="Assets\WeatherMaker\Prefab\Scripts\Extensions\WeatherMakerExtensionWaterScript.cs" />
+    <Compile Include="Assets\WeatherMaker\Prefab\Scripts\Extensions\WeatherMakerExtensionWorldManagerScript.cs" />
+    <Compile Include="Assets\WeatherMaker\Prefab\Scripts\Extensions\WeatherMakerNetworkScript.cs" />
+    <Compile Include="Assets\WeatherMaker\Prefab\Scripts\Extensions\WeatherMakerUNetScript.cs" />
+    <Compile Include="Assets\WeatherMaker\Prefab\Scripts\Fog\WeatherMakerBoxFogScript.cs" />
+    <Compile Include="Assets\WeatherMaker\Prefab\Scripts\Fog\WeatherMakerFogProfileScript.cs" />
+    <Compile Include="Assets\WeatherMaker\Prefab\Scripts\Fog\WeatherMakerFogScript.cs" />
+    <Compile Include="Assets\WeatherMaker\Prefab\Scripts\Fog\WeatherMakerFullScreenFogProfileScript.cs" />
+    <Compile Include="Assets\WeatherMaker\Prefab\Scripts\Fog\WeatherMakerFullScreenFogScript.cs" />
+    <Compile Include="Assets\WeatherMaker\Prefab\Scripts\Fog\WeatherMakerSphereFogScript.cs" />
+    <Compile Include="Assets\WeatherMaker\Prefab\Scripts\Manager\WeatherMakerAudioManagerScript.cs" />
+    <Compile Include="Assets\WeatherMaker\Prefab\Scripts\Manager\WeatherMakerCloudManager2DScript.cs" />
+    <Compile Include="Assets\WeatherMaker\Prefab\Scripts\Manager\WeatherMakerCloudManagerScript.cs" />
+    <Compile Include="Assets\WeatherMaker\Prefab\Scripts\Manager\WeatherMakerCommandBufferManagerScript.cs" />
+    <Compile Include="Assets\WeatherMaker\Prefab\Scripts\Manager\WeatherMakerConfigurationScript.cs" />
+    <Compile Include="Assets\WeatherMaker\Prefab\Scripts\Manager\WeatherMakerEditorUtility.cs" />
+    <Compile Include="Assets\WeatherMaker\Prefab\Scripts\Manager\WeatherMakerFogManagerScript.cs" />
+    <Compile Include="Assets\WeatherMaker\Prefab\Scripts\Manager\WeatherMakerFullScreenEffect.cs" />
+    <Compile Include="Assets\WeatherMaker\Prefab\Scripts\Manager\WeatherMakerLightManagerScript.cs" />
+    <Compile Include="Assets\WeatherMaker\Prefab\Scripts\Manager\WeatherMakerLightningGenerator.cs" />
+    <Compile Include="Assets\WeatherMaker\Prefab\Scripts\Manager\WeatherMakerPlayerControllerScript.cs" />
+    <Compile Include="Assets\WeatherMaker\Prefab\Scripts\Manager\WeatherMakerPlayerSoundManagerScript.cs" />
+    <Compile Include="Assets\WeatherMaker\Prefab\Scripts\Manager\WeatherMakerPrecipitationManagerScript.cs" />
+    <Compile Include="Assets\WeatherMaker\Prefab\Scripts\Manager\WeatherMakerScript.cs" />
+    <Compile Include="Assets\WeatherMaker\Prefab\Scripts\Manager\WeatherMakerShaderIds.cs" />
+    <Compile Include="Assets\WeatherMaker\Prefab\Scripts\Manager\WeatherMakerShadowMapScript.cs" />
+    <Compile Include="Assets\WeatherMaker\Prefab\Scripts\Manager\WeatherMakerThunderAndLightningManagerScript.cs" />
+    <Compile Include="Assets\WeatherMaker\Prefab\Scripts\Manager\WeatherMakerTweenScript.cs" />
+    <Compile Include="Assets\WeatherMaker\Prefab\Scripts\Manager\WeatherMakerWindManagerScript.cs" />
+    <Compile Include="Assets\WeatherMaker\Prefab\Scripts\Mesh\WeatherMakerConeCreator.cs" />
+    <Compile Include="Assets\WeatherMaker\Prefab\Scripts\Mesh\WeatherMakerPlaneCreatorScript.cs" />
+    <Compile Include="Assets\WeatherMaker\Prefab\Scripts\Mesh\WeatherMakerSphereCreator.cs" />
+    <Compile Include="Assets\WeatherMaker\Prefab\Scripts\Mesh\WeatherMakerSphereCreatorScript.cs" />
+    <Compile Include="Assets\WeatherMaker\Prefab\Scripts\Sky\WeatherMakerCelestialObjectScript.cs" />
+    <Compile Include="Assets\WeatherMaker\Prefab\Scripts\Sky\WeatherMakerDayNightCycleManagerScript.cs" />
+    <Compile Include="Assets\WeatherMaker\Prefab\Scripts\Sky\WeatherMakerDayNightCycleProfileScript.cs" />
+    <Compile Include="Assets\WeatherMaker\Prefab\Scripts\Sky\WeatherMakerSkyPlaneScript.cs" />
+    <Compile Include="Assets\WeatherMaker\Prefab\Scripts\Sky\WeatherMakerSkyProfileScript.cs" />
+    <Compile Include="Assets\WeatherMaker\Prefab\Scripts\Sky\WeatherMakerSkySphereScript.cs" />
+    <Compile Include="Assets\WeatherMaker\Prefab\Scripts\Sound\WeatherMakerLoopingAudioSource.cs" />
+    <Compile Include="Assets\WeatherMaker\Prefab\Scripts\Sound\WeatherMakerSoundGroupScript.cs" />
+    <Compile Include="Assets\WeatherMaker\Prefab\Scripts\Sound\WeatherMakerSoundProfileScript.cs" />
+    <Compile Include="Assets\WeatherMaker\Prefab\Scripts\Sound\WeatherMakerSoundScript.cs" />
+    <Compile Include="Assets\WeatherMaker\Prefab\Scripts\Sound\WeatherMakerSoundZoneScript.cs" />
+    <Compile Include="Assets\WeatherMaker\Prefab\Scripts\Water\WeatherMakerDepthCameraScript.cs" />
+    <Compile Include="Assets\WeatherMaker\Prefab\Scripts\Water\WeatherMakerReflectionScript.cs" />
+    <Compile Include="Assets\WeatherMaker\Prefab\Scripts\Water\WeatherMakerWaterProfileScript.cs" />
+    <Compile Include="Assets\WeatherMaker\Prefab\Scripts\Water\WeatherMakerWaterScript.cs" />
+    <Compile Include="Assets\WeatherMaker\Prefab\Scripts\Weather\WeatherMakerBaseScriptableObjectScript.cs" />
+    <Compile Include="Assets\WeatherMaker\Prefab\Scripts\Weather\WeatherMakerDampeningZoneScript.cs" />
+    <Compile Include="Assets\WeatherMaker\Prefab\Scripts\Weather\WeatherMakerFallingParticleScript.cs" />
+    <Compile Include="Assets\WeatherMaker\Prefab\Scripts\Weather\WeatherMakerFallingParticleScript2D.cs" />
+    <Compile Include="Assets\WeatherMaker\Prefab\Scripts\Weather\WeatherMakerFallingParticleScript3D.cs" />
+    <Compile Include="Assets\WeatherMaker\Prefab\Scripts\Weather\WeatherMakerFullScreenOverlayScript.cs" />
+    <Compile Include="Assets\WeatherMaker\Prefab\Scripts\Weather\WeatherMakerLightningBoltDataStructures.cs" />
+    <Compile Include="Assets\WeatherMaker\Prefab\Scripts\Weather\WeatherMakerLightningBoltPrefabScript.cs" />
+    <Compile Include="Assets\WeatherMaker\Prefab\Scripts\Weather\WeatherMakerLightningBoltScript.cs" />
+    <Compile Include="Assets\WeatherMaker\Prefab\Scripts\Weather\WeatherMakerLightningProfileScript.cs" />
+    <Compile Include="Assets\WeatherMaker\Prefab\Scripts\Weather\WeatherMakerNullZoneProfile.cs" />
+    <Compile Include="Assets\WeatherMaker\Prefab\Scripts\Weather\WeatherMakerNullZoneScript.cs" />
+    <Compile Include="Assets\WeatherMaker\Prefab\Scripts\Weather\WeatherMakerOverlayProfileScript.cs" />
+    <Compile Include="Assets\WeatherMaker\Prefab\Scripts\Weather\WeatherMakerParticleCollisionScript.cs" />
+    <Compile Include="Assets\WeatherMaker\Prefab\Scripts\Weather\WeatherMakerPrecipitationProfileScript.cs" />
+    <Compile Include="Assets\WeatherMaker\Prefab\Scripts\Weather\WeatherMakerProfileGroupScript.cs" />
+    <Compile Include="Assets\WeatherMaker\Prefab\Scripts\Weather\WeatherMakerProfileScript.cs" />
+    <Compile Include="Assets\WeatherMaker\Prefab\Scripts\Weather\WeatherMakerThunderAndLightningScript.cs" />
+    <Compile Include="Assets\WeatherMaker\Prefab\Scripts\Weather\WeatherMakerThunderAndLightningScript2D.cs" />
+    <Compile Include="Assets\WeatherMaker\Prefab\Scripts\Weather\WeatherMakerThunderAndLightningScript3D.cs" />
+    <Compile Include="Assets\WeatherMaker\Prefab\Scripts\Weather\WeatherMakerWeatherZoneScript.cs" />
+    <Compile Include="Assets\WeatherMaker\Prefab\Scripts\Weather\WeatherMakerWindProfileScript.cs" />
+    <Compile Include="Assets\WeatherMaker\Prefab\Scripts\Weather\WeatherMakerWindScript.cs" />
+    <None Include="Assets\WeatherMaker\Prefab\Shaders\WeatherMakerTesselationShaderInclude.cginc" />
+    <None Include="Assets\WeatherMaker\Prefab\Shaders\WeatherMakerAdditiveSoftTintableShader.shader" />
+    <None Include="Assets\WeatherMaker\Prefab\Shaders\WeatherMakerAnimated3DTextureShader.shader" />
+    <None Include="Assets\WeatherMaker\Prefab\Shaders\WeatherMakerFullScreenOverlayShader.shader" />
+    <None Include="Assets\WeatherMaker\Prefab\Shaders\WeatherMakerSunShader.shader" />
+    <None Include="Assets\WeatherMaker\Prefab\Shaders\WeatherMakerSkyPlaneShader.shader" />
+    <None Include="Assets\WeatherMaker\Prefab\Shaders\WeatherMakerWaterShaderInclude.cginc" />
+    <None Include="Assets\WeatherMaker\Prefab\Shaders\WeatherMakerWavingGrassBillboardShader.shader" />
+    <None Include="Assets\WeatherMaker\Prefab\Shaders\WeatherMakerNullZoneShader.cginc" />
+    <None Include="Assets\WeatherMaker\Prefab\Shaders\WeatherMakerMoonShader.shader" />
+    <None Include="Assets\WeatherMaker\Prefab\Shaders\Resources\WeatherMakerNormalGenerator2DShader.shader" />
+    <None Include="Assets\WeatherMaker\Prefab\Shaders\WeatherMakerLightningBoltShaderNoGlow.shader" />
+    <None Include="Assets\WeatherMaker\Prefab\Shaders\WeatherMakerWaterTesselationShader.shader" />
+    <None Include="Assets\WeatherMaker\Prefab\Shaders\WeatherMakerSkyShader.cginc" />
+    <None Include="Assets\WeatherMaker\Prefab\Shaders\WeatherMakerFullScreenBlurShader.shader" />
+    <None Include="Assets\WeatherMaker\Prefab\Shaders\WeatherMakerWaterShader.shader" />
+    <None Include="Assets\WeatherMaker\Prefab\Shaders\WeatherMakerProjectorBlendShader.shader" />
+    <None Include="Assets\WeatherMaker\Prefab\Shaders\WeatherMakerFogShader.cginc" />
+    <None Include="Assets\WeatherMaker\Prefab\Shaders\WeatherMakerSkySphereShader.shader" />
     <None Include="Assets\TerrainComposer2\Shaders\Compute\TC_Noise.cginc" />
+    <None Include="Assets\WeatherMaker\Prefab\Shaders\WeatherMakerLightShaderInclude.cginc" />
+    <None Include="Assets\WeatherMaker\Prefab\Shaders\WeatherMakerLightningBoltShader.shader" />
+    <None Include="Assets\WeatherMaker\Prefab\Shaders\WeatherMakerBoxFogShader.shader" />
+    <None Include="Assets\WeatherMaker\Prefab\Shaders\WeatherMakerFullScreenCloudsShader.shader" />
+    <None Include="Assets\WeatherMaker\Prefab\Shaders\WeatherMakerWavingGrassShader.shader" />
+    <None Include="Assets\WeatherMaker\ChangeLog.txt" />
+    <None Include="Assets\WeatherMaker\Prefab\Shaders\WeatherMakerShadows.cginc" />
+    <None Include="Assets\WeatherMaker\Prefab\Shaders\WeatherMakerShadowMapSamplerShader.shader" />
+    <None Include="Assets\WeatherMaker\Prefab\Shaders\WeatherMakerPrecipitationShader.shader" />
+    <None Include="Assets\WeatherMaker\Demo\DemoResources\Material\Resources\WeatherMakerNoiseShader.shader" />
+    <None Include="Assets\WeatherMaker\Prefab\Shaders\WeatherMakerNoiseShaderInclude.cginc" />
     <None Include="Assets\Linhi Character\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
+    <None Include="Assets\WeatherMaker\Prefab\Shaders\WeatherMakerDepthSamplerShader.shader" />
     <None Include="Assets\Linhi Character\Shaders\Standard.shader" />
     <None Include="Assets\TerrainComposer2\Defaults\ProjectorAdditive.shader" />
+    <None Include="Assets\WeatherMaker\Prefab\Shaders\WeatherMakerShader.cginc" />
+    <None Include="Assets\WeatherMaker\Prefab\Shaders\WeatherMakerCloudShadowShader.shader" />
+    <None Include="Assets\WeatherMaker\Demo\DemoResources\TurbulenceLibrary\Resources\NoiseShaderTemplate.txt" />
+    <None Include="Assets\WeatherMaker\Prefab\Shaders\WeatherMakerConstantsShaderInclude.cginc" />
+    <None Include="Assets\WeatherMaker\Prefab\Shaders\WeatherMakerTreeBillboardShader.shader" />
+    <None Include="Assets\WeatherMaker\Prefab\Shaders\WeatherMakerOverlayShader.cginc" />
+    <None Include="Assets\WeatherMaker\Demo\DemoResources\TurbulenceLibrary\Readme.txt" />
+    <None Include="Assets\WeatherMaker\Readme.txt" />
+    <None Include="Assets\WeatherMaker\Prefab\Shaders\WeatherMakerFullScreenFogShader.shader" />
     <None Include="Assets\TerrainComposer2\Shaders\Compute\TC_NoisesAdvanced.cginc" />
     <None Include="Assets\Linhi Character\Cameras\CameraGuidelines.txt" />
+    <None Include="Assets\WeatherMaker\Prefab\Shaders\WeatherMakerProjectorMultiplyShader.shader" />
+    <None Include="Assets\WeatherMaker\Demo\DemoResources\Material\WeatherMakerDemoBackgroundShader.shader" />
+    <None Include="Assets\WeatherMaker\Prefab\Shaders\WeatherMakerSphereFogShader.shader" />
     <None Include="Assets\TerrainComposer2\Shaders\Compute\FlattenTerrain.shader" />
+    <None Include="Assets\WeatherMaker\Prefab\Shaders\WeatherMakerDepthWriteShader.shader" />
     <None Include="Assets\TerrainComposer2\Shaders\Compute\TC_Noise2.cginc" />
+    <None Include="Assets\WeatherMaker\Demo\DemoResources\Material\WeatherMakerDebugShader.shader" />
     <None Include="Assets\TerrainComposer2\Shaders\Compute\TC_Compute.compute" />
     <None Include="Assets\TerrainComposer2\ReadMe.txt" />
+    <None Include="Assets\WeatherMaker\Prefab\Shaders\WeatherMakerCloudShader.cginc" />
+    <None Include="Assets\WeatherMaker\Prefab\Shaders\WeatherMakerFullScreenAlphaShader.shader" />
     <Reference Include="UnityEditor.StandardEvents">
-      <HintPath>C:/Users/apere/OneDrive/Documents/GitHub/ASMBomber/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+      <HintPath>E:/Unity/ASMBomber/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>C:/Users/apere/OneDrive/Documents/GitHub/ASMBomber/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>E:/Unity/ASMBomber/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>C:/Users/apere/OneDrive/Documents/GitHub/ASMBomber/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>E:/Unity/ASMBomber/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/Users/apere/OneDrive/Documents/GitHub/ASMBomber/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>E:/Unity/ASMBomber/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -368,13 +504,13 @@
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.16f1/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="DynamicBone">
-      <HintPath>C:/Users/apere/OneDrive/Documents/GitHub/ASMBomber/Assets/Linhi Character/DynamicBone/DynamicBone.dll</HintPath>
+      <HintPath>E:/Unity/ASMBomber/Assets/Linhi Character/DynamicBone/DynamicBone.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Analytics">
-      <HintPath>C:/Users/apere/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.16/UnityEngine.Analytics.dll</HintPath>
+      <HintPath>C:/Users/Hausten/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.16/UnityEngine.Analytics.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.StandardEvents">
-      <HintPath>C:/Users/apere/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.13/UnityEngine.StandardEvents.dll</HintPath>
+      <HintPath>C:/Users/Hausten/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.13/UnityEngine.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.16f1/Editor/Data/MonoBleedingEdge/lib/mono/unity/mscorlib.dll</HintPath>

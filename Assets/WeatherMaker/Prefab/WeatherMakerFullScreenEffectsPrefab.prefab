@@ -1,0 +1,127 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1036276706808074}
+  m_IsPrefabAsset: 1
+--- !u!1 &1036276706808074
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4525371910272026}
+  - component: {fileID: 114192014785220516}
+  - component: {fileID: 114100637834240368}
+  m_Layer: 0
+  m_Name: WeatherMakerFullScreenEffectsPrefab
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1075075912480996
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4131194816015682}
+  - component: {fileID: 135440468254663372}
+  m_Layer: 0
+  m_Name: LensFlareBlocker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4131194816015682
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1075075912480996}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4525371910272026}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4525371910272026
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1036276706808074}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4131194816015682}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114100637834240368
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1036276706808074}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7549c9ad3da6b844aa27ffd5767d357c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FogProfile: {fileID: 0}
+  FogMaterial: {fileID: 2100000, guid: 1cafecee499da2a479216fb9601ea550, type: 2}
+  FogFullScreenMaterial: {fileID: 2100000, guid: 27c02551875714e4c9924c8dc674405e,
+    type: 2}
+  DownSampleScale: 1
+  FogBlurMaterial: {fileID: 2100000, guid: e95064bc28d090e489c0a5e3f91deb55, type: 2}
+  BlurShader: 0
+  FogRenderQueue: 16
+  AllowReflections: 0
+  FogShadowStrengthFactor: 0.005
+--- !u!114 &114192014785220516
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1036276706808074}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bbbe4868202ed44bbdbd9874f42b9cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _CloudProfile: {fileID: 0}
+  Material: {fileID: 2100000, guid: eceb41e7d4d5f9444abcc7541902f152, type: 2}
+  FullScreenMaterial: {fileID: 2100000, guid: 27c02551875714e4c9924c8dc674405e, type: 2}
+  DownSampleScale: 1
+  BlurMaterial: {fileID: 2100000, guid: e95064bc28d090e489c0a5e3f91deb55, type: 2}
+  BlurShader: 0
+  RenderQueue: 12
+  AllowReflections: 1
+  CloudLensFlareBlocker: {fileID: 1075075912480996}
+  MinimumCloudCoverToBlockLensFlare: 0.5
+--- !u!135 &135440468254663372
+SphereCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1075075912480996}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}

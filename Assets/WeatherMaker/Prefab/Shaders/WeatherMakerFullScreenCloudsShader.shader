@@ -1,0 +1,124 @@
+﻿//
+// Weather Maker for Unity
+// (c) 2016 Digital Ruby, LLC
+// Source code may be used for personal or commercial projects.
+// Source code may NOT be redistributed or sold.
+// 
+// *** A NOTE ABOUT PIRACY ***
+// 
+// If you got this asset off of leak forums or any other horrible evil pirate site, please consider buying it from the Unity asset store at https ://www.assetstore.unity3d.com/en/#!/content/60955?aid=1011lGnL. This asset is only legally available from the Unity Asset Store.
+// 
+// I'm a single indie dev supporting my family by spending hundreds and thousands of hours on this and other assets. It's very offensive, rude and just plain evil to steal when I (and many others) put so much hard work into the software.
+// 
+// Thank you.
+//
+// *** END NOTE ABOUT PIRACY ***
+//
+
+// TODO: Volumetric clouds
+// http://bitsquid.blogspot.com/2016/07/volumetric-clouds.html
+// https://github.com/greje656/clouds
+// http://patapom.com/topics/Revision2013/Revision%202013%20-%20Real-time%20Volumetric%20Rendering%20Course%20Notes.pdf
+
+Shader "WeatherMaker/WeatherMakerFullScreenCloudsShader"
+{
+	Properties
+	{
+		_PointSpotLightMultiplier("Point/Spot Light Multiplier", Range(0, 10)) = 1
+		_DirectionalLightMultiplier("Directional Light Multiplier", Range(0, 10)) = 1
+		_AmbientLightMultiplier("Ambient light multiplier", Range(0, 4)) = 1
+	}
+	SubShader
+	{
+		Tags{ "Queue" = "Geometry+503" "IgnoreProjector" = "True" "RenderType" = "Transparent" "LightMode" = "Always" }
+		Cull Off Lighting Off ZWrite Off ZTest LEqual Fog { Mode Off }
+		Blend [_SrcBlendMode][_DstBlendMode]
+
+		Pass
+		{
+			CGPROGRAM
+
+			#define WEATHER_MAKER_IS_FULL_SCREEN_EFFECT
+			#pragma vertex full_screen_vertex_shader
+			#pragma fragment frag
+			#pragma multi_compile_instancing
+			#pragma multi_compile __ ENABLE_CLOUDS ENABLE_CLOUDS_MASK
+			#pragma multi_compile __ UNITY_HDR_ON
+
+			#define WEATHER_MAKER_SHADOWS_OFF
+			#define WEATHER_MAKER_LIGHT_NO_DIR_LIGHT
+			#define WEATHER_MAKER_LIGHT_NO_NORMALS
+			#define WEATHER_MAKER_LIGHT_NO_SPECULAR
+
+			#include "WeatherMakerCloudShader.cginc"
+
+			// fixed4 cloudColor, inout fixed4 finalColor)
+			#define blendClouds(cloudColor, finalColor) \
+				finalColor.rgb = (cloudColor.rgb * cloudColor.a) + (finalColor.rgb * (1.0 - cloudColor.a)); \
+				finalColor.a = max(finalColor.a, cloudColor.a);
+
+			fixed4 frag (full_screen_fragment i) : SV_Target
+			{
+				WM_INSTANCE_FRAG(i);
+
+#if defined(ENABLE_CLOUDS) || defined(ENABLE_CLOUDS_MASK)
+
+				float3 cloudRay = GetRayFromForwardLine(i.forwardLine);
+				float3 worldPos;
+				fixed4 finalColor = fixed4(0.0, 0.0, 0.0, 0.0);
+				fixed4 cloudColor;
+				fixed alphaAccum = 0.0;
+
+				// top layer
+				UNITY_BRANCH
+				if (_CloudCover[3] > 0.0)
+				{
+					_CloudIndex = 3;
+					cloudColor = ComputeCloudColor(float3(cloudRay.x, cloudRay.y + _CloudRayOffset[3], cloudRay.z), _CloudNoise4, _CloudNoiseMask4, i.uv, alphaAccum);
+					blendClouds(cloudColor, finalColor);
+				}
+
+				// next layer
+				UNITY_BRANCH
+				if (_CloudCover[2] > 0.0)
+				{
+					_CloudIndex = 2;
+					cloudColor = ComputeCloudColor(float3(cloudRay.x, cloudRay.y + _CloudRayOffset[2], cloudRay.z), _CloudNoise3, _CloudNoiseMask3, i.uv, alphaAccum);
+					blendClouds(cloudColor, finalColor);
+				}
+
+				// next layer
+				UNITY_BRANCH
+				if (_CloudCover[1] > 0.0)
+				{
+					_CloudIndex = 1;
+					cloudColor = ComputeCloudColor(float3(cloudRay.x, cloudRay.y + _CloudRayOffset[1], cloudRay.z), _CloudNoise2, _CloudNoiseMask2, i.uv, alphaAccum);
+					blendClouds(cloudColor, finalColor);
+				}
+
+				// bottom layer
+				UNITY_BRANCH
+				if (_CloudCover[0] > 0.0)
+				{
+					_CloudIndex = 0;
+					cloudColor = ComputeCloudColor(float3(cloudRay.x, cloudRay.y + _CloudRayOffset[0], cloudRay.z), _CloudNoise1, _CloudNoiseMask1, i.uv, alphaAccum);
+					blendClouds(cloudColor, finalColor);
+				}
+
+				// reduce color by alpha, which is cloud intensity
+				finalColor.rgb *= finalColor.a;
+				ApplyDither(finalColor.rgb, i.uv, _WeatherMakerSkyDitherLevel);
+				return finalColor;
+
+#else
+
+				return fixed4(0.0, 0.0, 0.0, 0.0);
+
+#endif
+
+			}
+
+			ENDCG
+		}
+	}
+}
