@@ -62,42 +62,42 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\com\heparo\terrain\toolkit\editor\TerrainToolkitEditor.cs" />
-    <Compile Include="Assets\TerrainComposer2\Scripts\Editor\ReadMeEditor.cs" />
-    <Compile Include="Assets\TerrainComposer2\Scripts\Editor\TC_Area2DEditor.cs" />
-    <Compile Include="Assets\TerrainComposer2\Scripts\Editor\TC_AutoStampMaker.cs" />
-    <Compile Include="Assets\TerrainComposer2\Scripts\Editor\TC_ComputeEditor.cs" />
-    <Compile Include="Assets\TerrainComposer2\Scripts\Editor\TC_GenerateEditor.cs" />
-    <Compile Include="Assets\TerrainComposer2\Scripts\Editor\TC_ItemBehaviourEditor.cs" />
-    <Compile Include="Assets\TerrainComposer2\Scripts\Editor\TC_LayerGroupGUI.cs" />
-    <Compile Include="Assets\TerrainComposer2\Scripts\Editor\TC_LayerGroupResultGUI.cs" />
-    <Compile Include="Assets\TerrainComposer2\Scripts\Editor\TC_LayerGUI.cs" />
-    <Compile Include="Assets\TerrainComposer2\Scripts\Editor\TC_MeasureTerrainsEditor.cs" />
-    <Compile Include="Assets\TerrainComposer2\Scripts\Editor\TC_NodeGroupGUI.cs" />
-    <Compile Include="Assets\TerrainComposer2\Scripts\Editor\TC_NodeGUI.cs" />
-    <Compile Include="Assets\TerrainComposer2\Scripts\Editor\TC_NodeWindow.cs" />
-    <Compile Include="Assets\TerrainComposer2\Scripts\Editor\TC_RawImageEditor.cs" />
-    <Compile Include="Assets\TerrainComposer2\Scripts\Editor\TC_SelectItemGroupGUI.cs" />
-    <Compile Include="Assets\TerrainComposer2\Scripts\Editor\TC_SelectItemGUI.cs" />
-    <Compile Include="Assets\TerrainComposer2\Scripts\Editor\TC_SettingsEditor.cs" />
-    <Compile Include="Assets\TerrainComposer2\Scripts\Editor\TC_TerrainAreaEditor.cs" />
-    <Compile Include="Assets\TerrainComposer2\Scripts\Editor\TC_TerrainLayerGUI.cs" />
-    <Compile Include="Assets\TerrainComposer2\Scripts\Editor\TD.cs" />
-    <Compile Include="Assets\WeatherMaker\Demo\DemoResources\TurbulenceLibrary\Editor\NoiseCreator.cs" />
-    <Compile Include="Assets\WeatherMaker\Demo\DemoResources\TurbulenceLibrary\Editor\NoiseStrings2D.cs" />
-    <Compile Include="Assets\WeatherMaker\Demo\DemoResources\TurbulenceLibrary\Editor\NoiseStrings3D.cs" />
-    <Compile Include="Assets\WeatherMaker\Prefab\Editor\WeatherMakerEditorCommands.cs" />
-    <Compile Include="Assets\WeatherMaker\Prefab\Editor\WeatherMakerLightningBoltEditor.cs" />
+    <Compile Include="Assets\Environment_Terrain Stuff\TerrainComposer2\Scripts\Editor\ReadMeEditor.cs" />
+    <Compile Include="Assets\Environment_Terrain Stuff\TerrainComposer2\Scripts\Editor\TC_Area2DEditor.cs" />
+    <Compile Include="Assets\Environment_Terrain Stuff\TerrainComposer2\Scripts\Editor\TC_AutoStampMaker.cs" />
+    <Compile Include="Assets\Environment_Terrain Stuff\TerrainComposer2\Scripts\Editor\TC_ComputeEditor.cs" />
+    <Compile Include="Assets\Environment_Terrain Stuff\TerrainComposer2\Scripts\Editor\TC_GenerateEditor.cs" />
+    <Compile Include="Assets\Environment_Terrain Stuff\TerrainComposer2\Scripts\Editor\TC_ItemBehaviourEditor.cs" />
+    <Compile Include="Assets\Environment_Terrain Stuff\TerrainComposer2\Scripts\Editor\TC_LayerGroupGUI.cs" />
+    <Compile Include="Assets\Environment_Terrain Stuff\TerrainComposer2\Scripts\Editor\TC_LayerGroupResultGUI.cs" />
+    <Compile Include="Assets\Environment_Terrain Stuff\TerrainComposer2\Scripts\Editor\TC_LayerGUI.cs" />
+    <Compile Include="Assets\Environment_Terrain Stuff\TerrainComposer2\Scripts\Editor\TC_MeasureTerrainsEditor.cs" />
+    <Compile Include="Assets\Environment_Terrain Stuff\TerrainComposer2\Scripts\Editor\TC_NodeGroupGUI.cs" />
+    <Compile Include="Assets\Environment_Terrain Stuff\TerrainComposer2\Scripts\Editor\TC_NodeGUI.cs" />
+    <Compile Include="Assets\Environment_Terrain Stuff\TerrainComposer2\Scripts\Editor\TC_NodeWindow.cs" />
+    <Compile Include="Assets\Environment_Terrain Stuff\TerrainComposer2\Scripts\Editor\TC_RawImageEditor.cs" />
+    <Compile Include="Assets\Environment_Terrain Stuff\TerrainComposer2\Scripts\Editor\TC_SelectItemGroupGUI.cs" />
+    <Compile Include="Assets\Environment_Terrain Stuff\TerrainComposer2\Scripts\Editor\TC_SelectItemGUI.cs" />
+    <Compile Include="Assets\Environment_Terrain Stuff\TerrainComposer2\Scripts\Editor\TC_SettingsEditor.cs" />
+    <Compile Include="Assets\Environment_Terrain Stuff\TerrainComposer2\Scripts\Editor\TC_TerrainAreaEditor.cs" />
+    <Compile Include="Assets\Environment_Terrain Stuff\TerrainComposer2\Scripts\Editor\TC_TerrainLayerGUI.cs" />
+    <Compile Include="Assets\Environment_Terrain Stuff\TerrainComposer2\Scripts\Editor\TD.cs" />
+    <Compile Include="Assets\Environment_Terrain Stuff\WeatherMaker\Demo\DemoResources\TurbulenceLibrary\Editor\NoiseCreator.cs" />
+    <Compile Include="Assets\Environment_Terrain Stuff\WeatherMaker\Demo\DemoResources\TurbulenceLibrary\Editor\NoiseStrings2D.cs" />
+    <Compile Include="Assets\Environment_Terrain Stuff\WeatherMaker\Demo\DemoResources\TurbulenceLibrary\Editor\NoiseStrings3D.cs" />
+    <Compile Include="Assets\Environment_Terrain Stuff\WeatherMaker\Prefab\Editor\WeatherMakerEditorCommands.cs" />
+    <Compile Include="Assets\Environment_Terrain Stuff\WeatherMaker\Prefab\Editor\WeatherMakerLightningBoltEditor.cs" />
     <Reference Include="UnityEditor.StandardEvents">
-      <HintPath>E:/Unity/ASMBomber/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+      <HintPath>C:/Users/apere/OneDrive/Documents/GitHub/ASMBomber/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>E:/Unity/ASMBomber/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>C:/Users/apere/OneDrive/Documents/GitHub/ASMBomber/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>E:/Unity/ASMBomber/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>C:/Users/apere/OneDrive/Documents/GitHub/ASMBomber/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>E:/Unity/ASMBomber/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>C:/Users/apere/OneDrive/Documents/GitHub/ASMBomber/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -336,29 +336,47 @@
     <Reference Include="UnityEditor.Graphs">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.16f1/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEditor.Android.Extensions">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.16f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.16f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.WebGL.Extensions">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.16f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEditor.WindowsStandalone.Extensions">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.16f1/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEditor.OSXStandalone.Extensions">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.16f1/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll</HintPath>
+    </Reference>
     <Reference Include="DynamicBone">
-      <HintPath>E:/Unity/ASMBomber/Assets/Linhi Character/DynamicBone/DynamicBone.dll</HintPath>
+      <HintPath>C:/Users/apere/OneDrive/Documents/GitHub/ASMBomber/Assets/Linhi Character/DynamicBone/DynamicBone.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.Advertisements">
-      <HintPath>C:/Users/Hausten/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.ads@2.0.8/Editor/UnityEditor.Advertisements.dll</HintPath>
+      <HintPath>C:/Users/apere/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.ads@2.0.8/Editor/UnityEditor.Advertisements.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Analytics">
-      <HintPath>C:/Users/Hausten/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.16/UnityEngine.Analytics.dll</HintPath>
+      <HintPath>C:/Users/apere/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.16/UnityEngine.Analytics.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.Analytics">
-      <HintPath>C:/Users/Hausten/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.16/Editor/UnityEditor.Analytics.dll</HintPath>
+      <HintPath>C:/Users/apere/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.16/Editor/UnityEditor.Analytics.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.Purchasing">
-      <HintPath>C:/Users/Hausten/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.purchasing@2.0.3/Editor/UnityEditor.Purchasing.dll</HintPath>
+      <HintPath>C:/Users/apere/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.purchasing@2.0.3/Editor/UnityEditor.Purchasing.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.StandardEvents">
-      <HintPath>C:/Users/Hausten/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.13/UnityEngine.StandardEvents.dll</HintPath>
+      <HintPath>C:/Users/apere/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.13/UnityEngine.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/15.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.16f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions.Common">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.16f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Common.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.16f1/Editor/Data/MonoBleedingEdge/lib/mono/2.0-api/mscorlib.dll</HintPath>

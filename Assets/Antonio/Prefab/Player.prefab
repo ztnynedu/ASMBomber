@@ -20,9 +20,10 @@ GameObject:
   m_Component:
   - component: {fileID: 4848995768094266}
   - component: {fileID: 143859028795206248}
-  - component: {fileID: 114108563679041956}
   - component: {fileID: 23264273147049214}
   - component: {fileID: 33614689307499970}
+  - component: {fileID: 114577254536923076}
+  - component: {fileID: 114844724758748058}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -54,8 +55,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1890454354066796}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.395, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.539, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4848995768094266}
@@ -68,7 +69,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1339885988185560}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.038, y: 0.845, z: 1.264}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4152902976268312}
@@ -164,7 +165,7 @@ AudioListener:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1890454354066796}
   m_Enabled: 1
---- !u!114 &114108563679041956
+--- !u!114 &114577254536923076
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -172,9 +173,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1339885988185560}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c3923f4e369574848854f353f8808a57, type: 3}
+  m_Script: {fileID: 11500000, guid: 2823e06b614a3534c91a76d808a5430d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  grenadePrefab: {fileID: 1685150668702712, guid: 2b6dca66c398ec44aba5ea81218c856b,
+    type: 2}
+  throwForce: 20
 --- !u!114 &114710477623668378
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -187,6 +191,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mouseSensitivity: 80
+--- !u!114 &114844724758748058
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1339885988185560}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f724ae7deb83a4040a92037c1c1fa3dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!143 &143859028795206248
 CharacterController:
   m_ObjectHideFlags: 1

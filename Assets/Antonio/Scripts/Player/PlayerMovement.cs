@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerController : MonoBehaviour
+public class PlayerMovement : MonoBehaviour
 {
 
     CharacterController player;
@@ -37,10 +37,10 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        PlayerMovement();
+        Movement();
     }
 
-    private void PlayerMovement()
+    private void Movement()
     {
 
         if (player.isGrounded)
