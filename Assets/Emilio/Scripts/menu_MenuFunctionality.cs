@@ -17,8 +17,6 @@ public class menu_MenuFunctionality : MonoBehaviour {
     [SerializeField]
     GameObject Credits;
 
-    
-
     public GameObject InGameUI;
     public GameObject PauseMenu;
     public GameObject OptionsMenu;
@@ -101,6 +99,8 @@ public class menu_MenuFunctionality : MonoBehaviour {
             ModeSelect.SetActive(false);
             MainMenu.SetActive(false);
 
+        Debug.Log("OptionsMenu");
+
         OptionsMenu.SetActive(true);
     }
     public void InGameUIActivate()
@@ -110,6 +110,8 @@ public class menu_MenuFunctionality : MonoBehaviour {
             OptionsMenu.SetActive(false);
             ModeSelect.SetActive(false);
             MainMenu.SetActive(false);
+
+        Time.timeScale = 0;
 
         InGameUI.SetActive(true);
     }
@@ -138,6 +140,8 @@ public class menu_MenuFunctionality : MonoBehaviour {
             {
                 Paused = false;
                 Debug.Log("Game Is Paused");
+                Cursor.lockState = CursorLockMode.None;
+                Cursor.visible = true;
                 Time.timeScale = 0;
             }
         }
@@ -146,7 +150,10 @@ public class menu_MenuFunctionality : MonoBehaviour {
             if (Paused == true)
             {
                 Paused = false;
+                Cursor.lockState = CursorLockMode.Locked;
+                Cursor.visible = false;
                 InGameUIActivate();
+
                 Debug.Log("Game Is Unpaused");
                 Time.timeScale = 1;
             }
@@ -173,5 +180,6 @@ public class menu_MenuFunctionality : MonoBehaviour {
     public void LoadMainMenu(string WeOutHereTesting)
     {
         SceneManager.LoadScene(WeOutHereTesting);
+        //SceneManager.UnloadScene(Test);
     }
 }
