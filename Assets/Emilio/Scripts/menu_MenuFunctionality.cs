@@ -69,6 +69,8 @@ public class menu_MenuFunctionality : MonoBehaviour {
             OptionsMenu.SetActive(false);
             ModeSelect.SetActive(false);
 
+        Time.timeScale = 1;
+
         MainMenu.SetActive(true);
     }
     public void ModeSelectActivate()
@@ -111,9 +113,7 @@ public class menu_MenuFunctionality : MonoBehaviour {
             ModeSelect.SetActive(false);
             MainMenu.SetActive(false);
 
-        Time.timeScale = 0;
-
-        InGameUI.SetActive(true);
+       InGameUI.SetActive(true);
     }
     public void PauseActivate()
     {
