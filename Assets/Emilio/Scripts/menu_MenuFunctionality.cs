@@ -8,12 +8,16 @@ using UnityEngine.Events;
 
 public class menu_MenuFunctionality : MonoBehaviour {
 
+    public static menu_MenuFunctionality MF;
+
     [SerializeField]
     GameObject MainMenu;
     [SerializeField]
     GameObject ModeSelect;
     [SerializeField]
     GameObject Credits;
+
+    
 
     public GameObject InGameUI;
     public GameObject PauseMenu;
@@ -26,6 +30,18 @@ public class menu_MenuFunctionality : MonoBehaviour {
     [SerializeField]
     public bool IsMainMenu;
 
+    private void Awake()
+    {
+        if (MF == null)
+        {
+            MF = this;
+        }
+        else
+        {
+            Destroy(menu_MenuFunctionality.MF.gameObject);
+        }
+        DontDestroyOnLoad(this.gameObject);
+    }
     // Use this for initialization
     void Start () {
 
@@ -42,8 +58,9 @@ public class menu_MenuFunctionality : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        PauseButtonActivate();
         WasGamePaused();
-	}
+    }
 
     // [All Menu UI Activations Below. Yes I know, this is messy.]
     public void MainMenuActivate()
@@ -104,7 +121,12 @@ public class menu_MenuFunctionality : MonoBehaviour {
             ModeSelect.SetActive(false);
             MainMenu.SetActive(false);
 
-        PauseMenu.SetActive(true);
+        PauseMenu.SetActive(!PauseMenu.activeSelf);
+        Paused = true;
+    }
+    public void QuitGame()
+    {
+        Application.Quit();
     }
 
     // [PauseChecker]
@@ -112,20 +134,44 @@ public class menu_MenuFunctionality : MonoBehaviour {
     {
         if (PauseMenu.activeSelf == true)
         {
-            if(Paused == false)
+            if(Paused == true)
             {
-                Paused = true;
+                Paused = false;
+                Debug.Log("Game Is Paused");
                 Time.timeScale = 0;
             }
         }
-        else if (PauseMenu.activeSelf == false)
+        else
         {
             if (Paused == true)
             {
                 Paused = false;
+                InGameUIActivate();
+                Debug.Log("Game Is Unpaused");
                 Time.timeScale = 1;
             }
         }
     }
 
+    // [Pause The Game Ho]
+    public void PauseButtonActivate()
+    {
+        if (Input.GetKeyUp(KeyCode.P))
+        {
+            PauseActivate();
+        
+        }
+    }
+
+    // [Loads Test Scene]
+    public void LoadTest(string Test)
+    {
+        SceneManager.LoadScene(Test);
+    }
+
+    // [Loads Menu Scene]
+    public void LoadMainMenu(string WeOutHereTesting)
+    {
+        SceneManager.LoadScene(WeOutHereTesting);
+    }
 }

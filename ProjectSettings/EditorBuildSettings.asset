@@ -4,5 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Emilio/Scenes/WeOutHereTesting.unity
+    guid: d565f5bddddf3d24ab1d3fb40cd36626
+  - enabled: 1
+    path: Assets/Antonio/Scene/Test.unity
+    guid: a130988cad56bb94c84834dd59662673
   m_configObjects: {}
