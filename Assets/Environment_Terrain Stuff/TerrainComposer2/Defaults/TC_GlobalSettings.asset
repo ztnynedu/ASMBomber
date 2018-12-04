@@ -3,7 +3,7 @@
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Name: TC_GlobalSettings
   m_EditorClassIdentifier: 
   tooltip: 1
-  defaultTerrainSize: {x: 2048, y: 1000, z: 2048}
+  defaultTerrainSize: {x: 2050.24, y: 1000, z: 2048}
   SavePreviewTextures: 1
   previewColors:
   - {r: 1, g: 0, b: 0, a: 1}
