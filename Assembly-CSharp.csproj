@@ -66,6 +66,19 @@
     <Compile Include="Assets\Antonio\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Antonio\Scripts\PlayerLook.cs" />
     <Compile Include="Assets\Antonio\Scripts\PlayerMovement.cs" />
+    <Compile Include="Assets\Antonio\Scripts\TrajectoryPredictor\ExampleScenes\Scripts\LaunchDelayDestroy.cs" />
+    <Compile Include="Assets\Antonio\Scripts\TrajectoryPredictor\ExampleScenes\Scripts\Launcher.cs" />
+    <Compile Include="Assets\Antonio\Scripts\TrajectoryPredictor\ExampleScenes\Scripts\Launcher2D.cs" />
+    <Compile Include="Assets\Antonio\Scripts\TrajectoryPredictor\ExampleScenes\Scripts\LauncherFPS.cs" />
+    <Compile Include="Assets\Antonio\Scripts\TrajectoryPredictor\ExampleScenes\Scripts\MouseOrbit.cs" />
+    <Compile Include="Assets\Antonio\Scripts\TrajectoryPredictor\ExampleScenes\Standard Assets\Characters\FirstPersonCharacter\Scripts\FirstPersonController.cs" />
+    <Compile Include="Assets\Antonio\Scripts\TrajectoryPredictor\ExampleScenes\Standard Assets\Characters\FirstPersonCharacter\Scripts\HeadBob.cs" />
+    <Compile Include="Assets\Antonio\Scripts\TrajectoryPredictor\ExampleScenes\Standard Assets\Characters\FirstPersonCharacter\Scripts\MouseLook.cs" />
+    <Compile Include="Assets\Antonio\Scripts\TrajectoryPredictor\ExampleScenes\Standard Assets\Characters\FirstPersonCharacter\Scripts\RigidbodyFirstPersonController.cs" />
+    <Compile Include="Assets\Antonio\Scripts\TrajectoryPredictor\ExampleScenes\Standard Assets\Utility\CurveControlledBob.cs" />
+    <Compile Include="Assets\Antonio\Scripts\TrajectoryPredictor\ExampleScenes\Standard Assets\Utility\FOVKick.cs" />
+    <Compile Include="Assets\Antonio\Scripts\TrajectoryPredictor\ExampleScenes\Standard Assets\Utility\LerpControlledBob.cs" />
+    <Compile Include="Assets\Antonio\Scripts\TrajectoryPredictor\TrajectoryPredictor.cs" />
     <Compile Include="Assets\com\heparo\terrain\toolkit\scripts\TerrainToolkit.cs" />
     <Compile Include="Assets\Emilio\Scripts\menu_MenuFunctionality.cs" />
     <Compile Include="Assets\Environment_Terrain Stuff\TerrainComposer2\Scripts\Generate\EditorCoroutine.cs" />
@@ -252,6 +265,7 @@
     <None Include="Assets\Environment_Terrain Stuff\WeatherMaker\Prefab\Shaders\WeatherMakerMoonShader.shader" />
     <None Include="Assets\Environment_Terrain Stuff\WeatherMaker\Prefab\Shaders\Resources\WeatherMakerNormalGenerator2DShader.shader" />
     <None Include="Assets\Environment_Terrain Stuff\WeatherMaker\Prefab\Shaders\WeatherMakerLightningBoltShaderNoGlow.shader" />
+    <None Include="Assets\Antonio\Scripts\TrajectoryPredictor\README.txt" />
     <None Include="Assets\Environment_Terrain Stuff\WeatherMaker\Prefab\Shaders\WeatherMakerWaterTesselationShader.shader" />
     <None Include="Assets\Environment_Terrain Stuff\WeatherMaker\Prefab\Shaders\WeatherMakerSkyShader.cginc" />
     <None Include="Assets\Environment_Terrain Stuff\WeatherMaker\Prefab\Shaders\WeatherMakerFullScreenBlurShader.shader" />
