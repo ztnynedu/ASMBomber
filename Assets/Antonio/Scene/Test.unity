@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2450,6 +2450,70 @@ Prefab:
     - target: {fileID: 4963176183414628, guid: 3c978748bcc5e4a40949317762d99166, type: 2}
       propertyPath: m_RootOrder
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1965021736830780, guid: 3c978748bcc5e4a40949317762d99166, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1538377275509692, guid: 3c978748bcc5e4a40949317762d99166, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1179422451181366, guid: 3c978748bcc5e4a40949317762d99166, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224157588112008138, guid: 3c978748bcc5e4a40949317762d99166,
+        type: 2}
+      propertyPath: m_AnchorMax.x
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 224157588112008138, guid: 3c978748bcc5e4a40949317762d99166,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224736527791209410, guid: 3c978748bcc5e4a40949317762d99166,
+        type: 2}
+      propertyPath: m_AnchorMax.x
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 224736527791209410, guid: 3c978748bcc5e4a40949317762d99166,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224040233152753146, guid: 3c978748bcc5e4a40949317762d99166,
+        type: 2}
+      propertyPath: m_AnchorMax.x
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 224040233152753146, guid: 3c978748bcc5e4a40949317762d99166,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1460633986776934, guid: 3c978748bcc5e4a40949317762d99166, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1287228325162438, guid: 3c978748bcc5e4a40949317762d99166, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1383497341363620, guid: 3c978748bcc5e4a40949317762d99166, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114472731413400234, guid: 3c978748bcc5e4a40949317762d99166,
+        type: 2}
+      propertyPath: IsMainMenu
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114142233146392202, guid: 3c978748bcc5e4a40949317762d99166,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: PauseActivate
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3c978748bcc5e4a40949317762d99166, type: 2}
