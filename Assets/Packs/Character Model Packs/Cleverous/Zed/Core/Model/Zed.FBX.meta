@@ -162,7 +162,7 @@ ModelImporter:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
     resampleCurves: 1
-    optimizeGameObjects: 0
+    optimizeGameObjects: 1
     motionNodeName: Mannequin_Root
     rigImportErrors: 
     rigImportWarnings: 
@@ -177,7 +177,13 @@ ModelImporter:
     animationPositionError: 0.5
     animationScaleError: 0.5
     animationWrapMode: 0
-    extraExposedTransformPaths: []
+    extraExposedTransformPaths:
+    - Mannequin_Root/Mannequin_ Pelvis/Mannequin_ Spine_Belly/Mannequin_ Spine_LowerChest/Mannequin_
+      Spine_UpperChest/MannequinRightShoulder/Mannequin_ R_UpperArm/Mannequin_ R_Forearm/Mannequin_
+      R_Hand
+    - Mannequin_Root/Mannequin_ Pelvis/Mannequin_ Spine_Belly/Mannequin_ Spine_LowerChest/Mannequin_
+      Spine_UpperChest/MannequinLeftShoulder/Mannequin_ L_UpperArm/Mannequin_ L_Forearm/Mannequin_
+      L_Hand
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
