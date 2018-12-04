@@ -174,12 +174,15 @@ public class menu_MenuFunctionality : MonoBehaviour {
     public void LoadTest(string Test)
     {
         SceneManager.LoadScene(Test);
+        Destroy(gameObject);
     }
 
     // [Loads Menu Scene]
     public void LoadMainMenu(string WeOutHereTesting)
     {
         SceneManager.LoadScene(WeOutHereTesting);
+        MainMenuActivate();
+        Destroy(gameObject);
         //SceneManager.UnloadScene(Test);
     }
 }

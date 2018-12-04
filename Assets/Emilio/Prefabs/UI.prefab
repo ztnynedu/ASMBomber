@@ -3145,7 +3145,7 @@ MonoBehaviour:
   PauseMenu: {fileID: 1179422451181366}
   OptionsMenu: {fileID: 1460633986776934}
   Paused: 0
-  IsMainMenu: 0
+  IsMainMenu: 1
 --- !u!114 &114491305953990756
 MonoBehaviour:
   m_ObjectHideFlags: 1
