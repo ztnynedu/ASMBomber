@@ -166,7 +166,6 @@ public class menu_MenuFunctionality : MonoBehaviour {
         if (Input.GetKeyUp(KeyCode.P))
         {
             PauseActivate();
-        
         }
     }
 
