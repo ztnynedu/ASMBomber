@@ -11,8 +11,8 @@ Material:
   m_ShaderKeywords: ENABLE_CLOUDS ENABLE_SUN_HIGH_QUALITY WATER_EDGEBLEND_ON WATER_REFLECTIVE
     _EMISSION _NORMALMAP _SMOOTHNESS_TEXTURE_ALBEDO_CHANNEL_A
   m_LightmapFlags: 1
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
+  m_EnableInstancingVariants: 1
+  m_DoubleSidedGI: 1
   m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []

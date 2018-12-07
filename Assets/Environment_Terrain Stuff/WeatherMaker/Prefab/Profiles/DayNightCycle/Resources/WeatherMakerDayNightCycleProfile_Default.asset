@@ -11,19 +11,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d4dbdbf04c6ebf4ab9bbaaea3ca6638, type: 3}
   m_Name: WeatherMakerDayNightCycleProfile_Default
   m_EditorClassIdentifier: 
-  Speed: 10
-  NightSpeed: 10
-  UpdateInterval: 0
-  TimeOfDay: 43000
-  TimeOfDayLabel: 11:56 AM
+  Speed: 100
+  NightSpeed: 100
+  UpdateInterval: 7.39
+  TimeOfDay: 61544
+  TimeOfDayLabel: 05:05 PM
   Year: 2017
-  Month: 3
-  Day: 7
-  AdjustDateWhenDayEnds: 1
+  Month: 8
+  Day: 21
+  AdjustDateWhenDayEnds: 0
   TimeZoneOffsetSeconds: -21600
-  Latitude: 44
-  Longitude: -111.79239654541016
-  AxisTilt: 23.439
+  Latitude: 37.767799377441406
+  Longitude: -90
+  AxisTilt: 23
   DayDawnDuskNightGradient:
     serializedVersion: 2
     key0: {r: 0, g: 0, b: 1, a: 1}
@@ -54,7 +54,7 @@ MonoBehaviour:
     m_NumColorKeys: 6
     m_NumAlphaKeys: 2
   NightSkyTintColor: {r: 1, g: 1, b: 1, a: 1}
-  NightSkyAddColor: {r: 0.003921569, g: 0, b: 0.007843138, a: 1}
+  NightSkyAddColor: {r: 0, g: 0.14030716, b: 0.6037736, a: 1}
   AmbientColorMode: 8
   DayAmbientColor:
     serializedVersion: 2
@@ -418,7 +418,7 @@ MonoBehaviour:
   NightAmbientColorEquatorIntensity: 0.004
   SunTintColorGradient:
     serializedVersion: 2
-    key0: {r: 1, g: 1, b: 1, a: 1}
+    key0: {r: 1, g: 0.95820487, b: 0.5330188, a: 1}
     key1: {r: 1, g: 1, b: 1, a: 1}
     key2: {r: 0, g: 0, b: 0, a: 0}
     key3: {r: 0, g: 0, b: 0, a: 0}

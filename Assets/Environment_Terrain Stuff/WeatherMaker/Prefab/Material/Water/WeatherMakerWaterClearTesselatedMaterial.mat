@@ -185,6 +185,7 @@ Material:
     - _PointSpotLightMultiplier: 1
     - _ReflDistort: 0.9267696
     - _RefrDistort: 1.4393286
+    - _RefractionStrength: 1
     - _Shininess: 256
     - _ShoreTiling: 56.862743
     - _SpecularIntensity: 4
@@ -216,7 +217,7 @@ Material:
     - _VolumetricShadowPower: 1
     - _VolumetricShadowPowerFade: 0.02
     - _WaterDepth: 40.98077
-    - _WaterDepthThreshold: 0.024414062
+    - _WaterDepthThreshold: -3.4028235e+38
     - _WaterDitherLevel: 0.001
     - _WaterFogDensity: 0.03
     - _WaterShadowStrength: 32
