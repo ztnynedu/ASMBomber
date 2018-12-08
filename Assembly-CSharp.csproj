@@ -80,6 +80,29 @@
     <Compile Include="Assets\Antonio\Scripts\TrajectoryPredictor\ExampleScenes\Standard Assets\Utility\LerpControlledBob.cs" />
     <Compile Include="Assets\Antonio\Scripts\TrajectoryPredictor\TrajectoryPredictor.cs" />
     <Compile Include="Assets\Emilio\Scripts\menu_MenuFunctionality.cs" />
+    <Compile Include="Assets\Environment_Terrain Stuff\LushLOD Trees\Internal Files\Gaia Demo Dependancies\Scripts\_LushLODGaiaDemoMainDirLight.cs" />
+    <Compile Include="Assets\Environment_Terrain Stuff\LushLOD Trees\Internal Files\Gaia Demo Dependancies\StandardAssetsWater\_L_Displace.cs" />
+    <Compile Include="Assets\Environment_Terrain Stuff\LushLOD Trees\Internal Files\Gaia Demo Dependancies\StandardAssetsWater\_L_GerstnerDisplace.cs" />
+    <Compile Include="Assets\Environment_Terrain Stuff\LushLOD Trees\Internal Files\Gaia Demo Dependancies\StandardAssetsWater\_L_PlanarReflection.cs" />
+    <Compile Include="Assets\Environment_Terrain Stuff\LushLOD Trees\Internal Files\Gaia Demo Dependancies\StandardAssetsWater\_L_SpecularLighting.cs" />
+    <Compile Include="Assets\Environment_Terrain Stuff\LushLOD Trees\Internal Files\Gaia Demo Dependancies\StandardAssetsWater\_L_WaterBase.cs" />
+    <Compile Include="Assets\Environment_Terrain Stuff\LushLOD Trees\Internal Files\Gaia Demo Dependancies\StandardAssetsWater\_L_WaterTile.cs" />
+    <Compile Include="Assets\Environment_Terrain Stuff\LushLOD Trees\Scripts\_LushLODPostProcessor.cs" />
+    <Compile Include="Assets\Environment_Terrain Stuff\LushLOD Trees\Scripts\_LushLODPostProcessor_CopyScreen.cs" />
+    <Compile Include="Assets\Environment_Terrain Stuff\LushLOD Trees\Scripts\_LushLODPostProcessor_DisableHQ.cs" />
+    <Compile Include="Assets\Environment_Terrain Stuff\LushLOD Trees\Scripts\_LushLODPostProcessor_RestoreAlpha.cs" />
+    <Compile Include="Assets\Environment_Terrain Stuff\LushLOD Trees\Scripts\_LushLODPostProcessor_RTCam.cs" />
+    <Compile Include="Assets\Environment_Terrain Stuff\LushLOD Trees\Scripts\_LushLODTree.cs" />
+    <Compile Include="Assets\Environment_Terrain Stuff\LushLOD Trees\Scripts\_LushLODTreeConverter.cs" />
+    <Compile Include="Assets\Environment_Terrain Stuff\LushLOD Trees\Scripts\_LushLODTreeConverterEditor2.cs" />
+    <Compile Include="Assets\Environment_Terrain Stuff\LushLOD Trees\Scripts\_LushLODTreeSceneConverter.cs" />
+    <Compile Include="Assets\Environment_Terrain Stuff\LushLOD Trees\Scripts\_LushLODTreesFlycam.cs" />
+    <Compile Include="Assets\Environment_Terrain Stuff\LushLOD Trees\Scripts\_LushLODTreesFPS.cs" />
+    <Compile Include="Assets\Environment_Terrain Stuff\LushLOD Trees\Scripts\_LushLODTreesManager.cs" />
+    <Compile Include="Assets\Environment_Terrain Stuff\LushLOD Trees\Scripts\_LushLODTreesMouseOrbit.cs" />
+    <Compile Include="Assets\Environment_Terrain Stuff\LushLOD Trees\Scripts\_LushLODTreesNoDestroy.cs" />
+    <Compile Include="Assets\Environment_Terrain Stuff\LushLOD Trees\Scripts\_LushLODTreesUI.cs" />
+    <Compile Include="Assets\Environment_Terrain Stuff\LushLOD Trees\Scripts\_LushLODTreeWarning.cs" />
     <Compile Include="Assets\Environment_Terrain Stuff\TerrainComposer2\Scripts\Generate\EditorCoroutine.cs" />
     <Compile Include="Assets\Environment_Terrain Stuff\TerrainComposer2\Scripts\Generate\TC_AnimateNode.cs" />
     <Compile Include="Assets\Environment_Terrain Stuff\TerrainComposer2\Scripts\Generate\TC_AnimateTransform.cs" />
@@ -260,81 +283,143 @@
     <Compile Include="Assets\Particle Pack\EffectExamples\Misc Effects\Scripts\SpawnEffect.cs" />
     <Compile Include="Assets\TestJunkSMB.cs" />
     <None Include="Assets\Environment_Terrain Stuff\WeatherMaker\Prefab\Shaders\WeatherMakerTesselationShaderInclude.cginc" />
+    <None Include="Assets\Environment_Terrain Stuff\LushLOD Trees\Internal Files\Shaders\Resources\Tree_Leaves4_Deferred.shader" />
     <None Include="Assets\Environment_Terrain Stuff\WeatherMaker\Prefab\Shaders\WeatherMakerAdditiveSoftTintableShader.shader" />
+    <None Include="Assets\Environment_Terrain Stuff\LushLOD Trees\Internal Files\Shaders\Partials\Simple Shadows.shader" />
     <None Include="Assets\Environment_Terrain Stuff\WeatherMaker\Prefab\Shaders\WeatherMakerAnimated3DTextureShader.shader" />
+    <None Include="Assets\Environment_Terrain Stuff\LushLOD Trees\Internal Files\Shaders\Resources\Tree_Leaves_Ultra.shader" />
+    <None Include="Assets\Environment_Terrain Stuff\LushLOD Trees\Internal Files\Shaders\Resources\Tree_Leaves Far4.shader" />
     <None Include="Assets\Environment_Terrain Stuff\WeatherMaker\Prefab\Shaders\WeatherMakerFullScreenOverlayShader.shader" />
     <None Include="Assets\Environment_Terrain Stuff\WeatherMaker\Prefab\Shaders\WeatherMakerSunShader.shader" />
+    <None Include="Assets\Environment_Terrain Stuff\LushLOD Trees\Internal Files\Shaders\Resources\TreeCreatorLeavesOptimized_Deferred.shader" />
+    <None Include="Assets\Environment_Terrain Stuff\LushLOD Trees\Internal Files\Shaders\Partials\SeamsBlending_Angular.shader" />
+    <None Include="Assets\Environment_Terrain Stuff\LushLOD Trees\Release Notes.txt" />
     <None Include="Assets\Environment_Terrain Stuff\WeatherMaker\Prefab\Shaders\WeatherMakerSkyPlaneShader.shader" />
+    <None Include="Assets\Environment_Terrain Stuff\LushLOD Trees\Internal Files\Shaders\Post Processing\Resources\MakeNonStencilPixelsOpaque.shader" />
+    <None Include="Assets\Environment_Terrain Stuff\LushLOD Trees\Internal Files\Shaders\Resources\HQTreeBark_SimpleShadows.shader" />
+    <None Include="Assets\Environment_Terrain Stuff\LushLOD Trees\Internal Files\Shaders\Resources\CGIncludes\SeamsBlending_NoAngular.cginc" />
     <None Include="Assets\Environment_Terrain Stuff\WeatherMaker\Prefab\Shaders\WeatherMakerWaterShaderInclude.cginc" />
+    <None Include="Assets\Environment_Terrain Stuff\LushLOD Trees\Internal Files\Shaders\Resources\Tree_Leaves Far2.shader" />
     <None Include="Assets\Environment_Terrain Stuff\WeatherMaker\Prefab\Shaders\WeatherMakerWavingGrassBillboardShader.shader" />
+    <None Include="Assets\Environment_Terrain Stuff\LushLOD Trees\Internal Files\Shaders\Resources\Tree_Leaves Far3_Deferred.shader" />
     <None Include="Assets\Environment_Terrain Stuff\WeatherMaker\Prefab\Shaders\WeatherMakerNullZoneShader.cginc" />
     <None Include="Assets\Environment_Terrain Stuff\WeatherMaker\Prefab\Shaders\WeatherMakerMoonShader.shader" />
+    <None Include="Assets\Environment_Terrain Stuff\LushLOD Trees\Internal Files\Shaders\Resources\TreeCreatorLeavesFastOptimized_SimpleShadows.shader" />
     <None Include="Assets\Environment_Terrain Stuff\WeatherMaker\Prefab\Shaders\Resources\WeatherMakerNormalGenerator2DShader.shader" />
     <None Include="Assets\Environment_Terrain Stuff\WeatherMaker\Prefab\Shaders\WeatherMakerLightningBoltShaderNoGlow.shader" />
+    <None Include="Assets\Environment_Terrain Stuff\LushLOD Trees\Internal Files\Shaders\Resources\Tree_Leaves Far3.shader" />
+    <None Include="Assets\Environment_Terrain Stuff\LushLOD Trees\Internal Files\Shaders\Resources\Tree_Leaves3.shader" />
     <None Include="Assets\Antonio\Scripts\TrajectoryPredictor\README.txt" />
     <None Include="Assets\Environment_Terrain Stuff\WeatherMaker\Prefab\Shaders\WeatherMakerWaterTesselationShader.shader" />
     <None Include="Assets\Environment_Terrain Stuff\WeatherMaker\Prefab\Shaders\WeatherMakerSkyShader.cginc" />
+    <None Include="Assets\Environment_Terrain Stuff\LushLOD Trees\Internal Files\Shaders\Resources\Tree_Leaves Far_Ultra_BB_Deferred.shader" />
     <None Include="Assets\Environment_Terrain Stuff\WeatherMaker\Prefab\Shaders\WeatherMakerFullScreenBlurShader.shader" />
     <None Include="Assets\Environment_Terrain Stuff\WeatherMaker\Prefab\Shaders\WeatherMakerWaterShader.shader" />
     <None Include="Assets\Environment_Terrain Stuff\WeatherMaker\Prefab\Shaders\WeatherMakerProjectorBlendShader.shader" />
+    <None Include="Assets\Environment_Terrain Stuff\LushLOD Trees\Internal Files\Shaders\Resources\CGIncludes\Dithering.cginc" />
+    <None Include="Assets\Environment_Terrain Stuff\LushLOD Trees\Internal Files\Shaders\Resources\HQTreeBark_Deferred.shader" />
     <None Include="Assets\Environment_Terrain Stuff\WeatherMaker\Prefab\Shaders\WeatherMakerFogShader.cginc" />
+    <None Include="Assets\Environment_Terrain Stuff\LushLOD Trees\Internal Files\Shaders\Resources\HQTreeBark_Ultra.shader" />
     <None Include="Assets\Environment_Terrain Stuff\WeatherMaker\Prefab\Shaders\WeatherMakerSkySphereShader.shader" />
     <None Include="Assets\Environment_Terrain Stuff\TerrainComposer2\Shaders\Compute\TC_Noise.cginc" />
     <None Include="Assets\Environment_Terrain Stuff\WeatherMaker\Prefab\Shaders\WeatherMakerLightShaderInclude.cginc" />
     <None Include="Assets\Particle Pack\EffectExamples\Misc Effects\Shaders\Dissolve.shader" />
+    <None Include="Assets\Environment_Terrain Stuff\LushLOD Trees\Internal Files\Shaders\Partials\SeamsBlending_Angular_Ultra.shader" />
     <None Include="Assets\Particle Pack\EffectExamples\Misc Effects\Shaders\FireFly.shader" />
     <None Include="Assets\Environment_Terrain Stuff\WeatherMaker\Prefab\Shaders\WeatherMakerLightningBoltShader.shader" />
     <None Include="Assets\Environment_Terrain Stuff\WeatherMaker\Prefab\Shaders\WeatherMakerBoxFogShader.shader" />
     <None Include="Assets\Environment_Terrain Stuff\WeatherMaker\Prefab\Shaders\WeatherMakerFullScreenCloudsShader.shader" />
     <None Include="Assets\Environment_Terrain Stuff\WeatherMaker\Prefab\Shaders\WeatherMakerWavingGrassShader.shader" />
     <None Include="Assets\Environment_Terrain Stuff\WeatherMaker\ChangeLog.txt" />
+    <None Include="Assets\Environment_Terrain Stuff\LushLOD Trees\Internal Files\Shaders\Resources\Tree_Leaves2.shader" />
+    <None Include="Assets\Environment_Terrain Stuff\LushLOD Trees\Internal Files\Shaders\Resources\Tree_Leaves Far4_Deferred.shader" />
+    <None Include="Assets\Environment_Terrain Stuff\LushLOD Trees\Internal Files\Shaders\Resources\Tree_Leaves2_Deferred.shader" />
+    <None Include="Assets\Environment_Terrain Stuff\LushLOD Trees\Internal Files\Shaders\Post Processing\Resources\BackgroundClippedCopy.shader" />
+    <None Include="Assets\Environment_Terrain Stuff\LushLOD Trees\Internal Files\Shaders\Resources\CGIncludes\SeamsBlending_Angular.cginc" />
     <None Include="Assets\Environment_Terrain Stuff\WeatherMaker\Prefab\Shaders\WeatherMakerShadows.cginc" />
     <None Include="Assets\Environment_Terrain Stuff\WeatherMaker\Prefab\Shaders\WeatherMakerShadowMapSamplerShader.shader" />
     <None Include="Assets\Particle Pack\EffectExamples\Misc Effects\Prefabs\Readme_Dissolve_Respawn_.txt" />
+    <None Include="Assets\Environment_Terrain Stuff\LushLOD Trees\Internal Files\Shaders\Post Processing\Resources\BlitCopyAlphaFlippable.shader" />
+    <None Include="Assets\Environment_Terrain Stuff\LushLOD Trees\Internal Files\Shaders\Resources\TreeCreatorLeavesOptimized_SimpleShadows_Deferred.shader" />
+    <None Include="Assets\Environment_Terrain Stuff\LushLOD Trees\Internal Files\Shaders\Resources\CGIncludes\WorldPositionCenter.cginc" />
     <None Include="Assets\Environment_Terrain Stuff\WeatherMaker\Prefab\Shaders\WeatherMakerPrecipitationShader.shader" />
+    <None Include="Assets\Environment_Terrain Stuff\LushLOD Trees\Internal Files\Shaders\Post Processing\Resources\MobileBlur.shader" />
+    <None Include="Assets\Environment_Terrain Stuff\LushLOD Trees\Lightmap Settings\Documentation.txt" />
+    <None Include="Assets\Environment_Terrain Stuff\LushLOD Trees\Internal Files\Shaders\Resources\Tree_Leaves Far2_Deferred.shader" />
+    <None Include="Assets\Environment_Terrain Stuff\LushLOD Trees\Internal Files\Shaders\Post Processing\Resources\SmoothTheDithering_OnPostRender.shader" />
+    <None Include="Assets\Environment_Terrain Stuff\LushLOD Trees\Documentation\Release Notes.txt" />
     <None Include="Assets\Environment_Terrain Stuff\WeatherMaker\Demo\DemoResources\Material\Resources\WeatherMakerNoiseShader.shader" />
+    <None Include="Assets\Environment_Terrain Stuff\LushLOD Trees\Internal Files\Shaders\Resources\TreeCreatorLeavesOptimized_SimpleShadows_Ultra.shader" />
+    <None Include="Assets\Environment_Terrain Stuff\LushLOD Trees\Internal Files\Shaders\Resources\HQTreeBark_SimpleShadows_Ultra_Deferred.shader" />
     <None Include="Assets\Packs\Character Model Packs\Knight\shaders\doublesidedshader.shader" />
     <None Include="Assets\Environment_Terrain Stuff\WeatherMaker\Prefab\Shaders\WeatherMakerNoiseShaderInclude.cginc" />
     <None Include="Assets\Packs\Character Model Packs\Linhi Character\Linhi Character\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
     <None Include="Assets\Particle Pack\EffectExamples\Misc Effects\Shaders\Respawn.shader" />
+    <None Include="Assets\Environment_Terrain Stuff\LushLOD Trees\Internal Files\Shaders\Partials\WorldPositionCenter.shader" />
+    <None Include="Assets\Environment_Terrain Stuff\LushLOD Trees\Internal Files\Shaders\Resources\HQTreeBark.shader" />
     <None Include="Assets\Environment_Terrain Stuff\WeatherMaker\Prefab\Shaders\WeatherMakerDepthSamplerShader.shader" />
+    <None Include="Assets\Environment_Terrain Stuff\LushLOD Trees\Internal Files\Shaders\Resources\HQTreeBark_SimpleShadows_Deferred.shader" />
     <None Include="Assets\Packs\Character Model Packs\Linhi Character\Linhi Character\Shaders\Standard.shader" />
     <None Include="Assets\Environment_Terrain Stuff\TerrainComposer2\Defaults\ProjectorAdditive.shader" />
+    <None Include="Assets\Environment_Terrain Stuff\LushLOD Trees\Internal Files\Shaders\Post Processing\Resources\ReapplySavedAlphaChannel_OnPostRender.shader" />
     <None Include="Assets\Environment_Terrain Stuff\WeatherMaker\Prefab\Shaders\WeatherMakerShader.cginc" />
+    <None Include="Assets\Environment_Terrain Stuff\LushLOD Trees\Internal Files\Shaders\Resources\Tree_Leaves3_Deferred.shader" />
+    <None Include="Assets\Environment_Terrain Stuff\LushLOD Trees\Internal Files\Shaders\Resources\Tree_Leaves Far_Ultra.shader" />
     <None Include="Assets\Environment_Terrain Stuff\WeatherMaker\Prefab\Shaders\WeatherMakerCloudShadowShader.shader" />
+    <None Include="Assets\Environment_Terrain Stuff\LushLOD Trees\Internal Files\Shaders\Post Processing\Resources\SmoothTheDithering.shader" />
     <None Include="Assets\Environment_Terrain Stuff\WeatherMaker\Demo\DemoResources\TurbulenceLibrary\Resources\NoiseShaderTemplate.txt" />
+    <None Include="Assets\Environment_Terrain Stuff\LushLOD Trees\Internal Files\Shaders\Resources\CGIncludes\SeamsBlending_Angular_Ultra.cginc" />
+    <None Include="Assets\Environment_Terrain Stuff\LushLOD Trees\Internal Files\Shaders\Resources\TreeCreatorLeavesOptimized.shader" />
+    <None Include="Assets\Environment_Terrain Stuff\LushLOD Trees\Internal Files\Shaders\Partials\SeamsBlending_NoAngular.shader" />
     <None Include="Assets\Packs\Animations\Raw Mocap Data\Animations\_CompleteAnimationList.txt" />
+    <None Include="Assets\Environment_Terrain Stuff\LushLOD Trees\Internal Files\Shaders\Partials\AngularCorrection.shader" />
     <None Include="Assets\Environment_Terrain Stuff\WeatherMaker\Prefab\Shaders\WeatherMakerConstantsShaderInclude.cginc" />
     <None Include="Assets\Environment_Terrain Stuff\WeatherMaker\Prefab\Shaders\WeatherMakerTreeBillboardShader.shader" />
+    <None Include="Assets\Environment_Terrain Stuff\LushLOD Trees\Internal Files\Shaders\Post Processing\Resources\ReapplySavedAlphaChannel.shader" />
+    <None Include="Assets\Environment_Terrain Stuff\LushLOD Trees\Scenes\Partial Scenes\readme.txt" />
     <None Include="Assets\Environment_Terrain Stuff\WeatherMaker\Prefab\Shaders\WeatherMakerOverlayShader.cginc" />
     <None Include="Assets\Environment_Terrain Stuff\WeatherMaker\Demo\DemoResources\TurbulenceLibrary\Readme.txt" />
+    <None Include="Assets\Environment_Terrain Stuff\LushLOD Trees\Internal Files\Shaders\Resources\TreeCreatorLeavesOptimized_SimpleShadows.shader" />
     <None Include="Assets\Environment_Terrain Stuff\WeatherMaker\Readme.txt" />
+    <None Include="Assets\Environment_Terrain Stuff\LushLOD Trees\Internal Files\Shaders\Resources\Tree_Leaves Far_Ultra_Deferred.shader" />
+    <None Include="Assets\Environment_Terrain Stuff\LushLOD Trees\Internal Files\Shaders\Resources\Tree_Leaves_Ultra_Deferred.shader" />
     <None Include="Assets\Environment_Terrain Stuff\WeatherMaker\Prefab\Shaders\WeatherMakerFullScreenFogShader.shader" />
+    <None Include="Assets\Environment_Terrain Stuff\LushLOD Trees\Internal Files\Shaders\Resources\HQTreeBark_Ultra_Deferred.shader" />
     <None Include="Assets\Environment_Terrain Stuff\TerrainComposer2\Shaders\Compute\TC_NoisesAdvanced.cginc" />
     <None Include="Assets\Packs\Character Model Packs\Linhi Character\Linhi Character\Cameras\CameraGuidelines.txt" />
     <None Include="Assets\Particle Pack\EffectExamples\Magic Effects\Shaders\Ice.shader" />
     <None Include="Assets\Environment_Terrain Stuff\WeatherMaker\Prefab\Shaders\WeatherMakerProjectorMultiplyShader.shader" />
+    <None Include="Assets\Environment_Terrain Stuff\LushLOD Trees\Internal Files\Gaia Demo Dependancies\StandardAssetsWater\Shaders\LushLODWaterInclude.cginc" />
+    <None Include="Assets\Environment_Terrain Stuff\LushLOD Trees\Internal Files\Shaders\Post Processing\Resources\BlitCopyFlippable.shader" />
+    <None Include="Assets\Environment_Terrain Stuff\LushLOD Trees\Internal Files\Shaders\Post Processing\Resources\MakeNonStencilPixelsOpaque_OnPostRender.shader" />
     <None Include="Assets\Environment_Terrain Stuff\WeatherMaker\Demo\DemoResources\Material\WeatherMakerDemoBackgroundShader.shader" />
+    <None Include="Assets\Environment_Terrain Stuff\LushLOD Trees\Internal Files\Gaia Demo Dependancies\StandardAssetsWater\Shaders\FXWater4Advanced.shader" />
+    <None Include="Assets\Environment_Terrain Stuff\LushLOD Trees\Internal Files\Shaders\Resources\HQTreeBark_SimpleShadows_Ultra.shader" />
     <None Include="Assets\Environment_Terrain Stuff\WeatherMaker\Prefab\Shaders\WeatherMakerSphereFogShader.shader" />
+    <None Include="Assets\Environment_Terrain Stuff\LushLOD Trees\Internal Files\Shaders\Resources\CGIncludes\AngularCorrection.cginc" />
     <None Include="Assets\Environment_Terrain Stuff\TerrainComposer2\Shaders\Compute\FlattenTerrain.shader" />
     <None Include="Assets\Environment_Terrain Stuff\WeatherMaker\Prefab\Shaders\WeatherMakerDepthWriteShader.shader" />
+    <None Include="Assets\Environment_Terrain Stuff\LushLOD Trees\Internal Files\Shaders\Resources\TreeCreatorLeavesOptimized_SimpleShadows_Ultra_Deferred.shader" />
+    <None Include="Assets\Environment_Terrain Stuff\LushLOD Trees\Internal Files\Shaders\Resources\Tree_Leaves4.shader" />
+    <None Include="Assets\Environment_Terrain Stuff\LushLOD Trees\Internal Files\Shaders\Resources\TreeCreatorLeavesFastOptimized.shader" />
     <None Include="Assets\Environment_Terrain Stuff\TerrainComposer2\Shaders\Compute\TC_Noise2.cginc" />
     <None Include="Assets\Environment_Terrain Stuff\WeatherMaker\Demo\DemoResources\Material\WeatherMakerDebugShader.shader" />
     <None Include="Assets\Environment_Terrain Stuff\TerrainComposer2\Shaders\Compute\TC_Compute.compute" />
     <None Include="Assets\Environment_Terrain Stuff\TerrainComposer2\ReadMe.txt" />
     <None Include="Assets\Environment_Terrain Stuff\WeatherMaker\Prefab\Shaders\WeatherMakerCloudShader.cginc" />
+    <None Include="Assets\Environment_Terrain Stuff\LushLOD Trees\Internal Files\Shaders\Resources\Tree_Leaves Far_Ultra_BB.shader" />
     <None Include="Assets\Environment_Terrain Stuff\WeatherMaker\Prefab\Shaders\WeatherMakerFullScreenAlphaShader.shader" />
     <Reference Include="UnityEditor.StandardEvents">
-      <HintPath>C:/Users/Tobby/Documents/GitHub/ASMBomber/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+      <HintPath>E:/Unity/ASMBomber/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>C:/Users/Tobby/Documents/GitHub/ASMBomber/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>E:/Unity/ASMBomber/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>C:/Users/Tobby/Documents/GitHub/ASMBomber/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>E:/Unity/ASMBomber/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/Users/Tobby/Documents/GitHub/ASMBomber/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>E:/Unity/ASMBomber/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -535,13 +620,13 @@
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.16f1/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="DynamicBone">
-      <HintPath>C:/Users/Tobby/Documents/GitHub/ASMBomber/Assets/Packs/Character Model Packs/Linhi Character/DynamicBone/DynamicBone.dll</HintPath>
+      <HintPath>E:/Unity/ASMBomber/Assets/Packs/Character Model Packs/Linhi Character/DynamicBone/DynamicBone.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Analytics">
-      <HintPath>C:/Users/Tobby/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.16/UnityEngine.Analytics.dll</HintPath>
+      <HintPath>C:/Users/Hausten/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.16/UnityEngine.Analytics.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.StandardEvents">
-      <HintPath>C:/Users/Tobby/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.13/UnityEngine.StandardEvents.dll</HintPath>
+      <HintPath>C:/Users/Hausten/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.13/UnityEngine.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.16f1/Editor/Data/MonoBleedingEdge/lib/mono/unity/mscorlib.dll</HintPath>

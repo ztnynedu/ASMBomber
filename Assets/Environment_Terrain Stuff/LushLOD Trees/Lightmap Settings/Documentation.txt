@@ -1,0 +1,6 @@
+LushLOD Trees shadow baking information:
+
+Using lightmaps to bake your shadows can give reasonably good looking tree shadows, with no framerate cost.
+
+For the most up-to-date documentation on lightmap settings, see the Knowledge Base article posted at:
+http://lushlodtrees.userecho.com/topics/1-lightmap-and-shadow-baking-settings/

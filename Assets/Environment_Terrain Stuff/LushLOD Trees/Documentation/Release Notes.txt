@@ -1,0 +1,3 @@
+New in Unity 2018.1+:
+
+Please see the Documentation for the manager's new options for "Ambient Light" and "Simple Shadows Advanced Settings" for a full list of all the new features.
