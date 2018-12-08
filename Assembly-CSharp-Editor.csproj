@@ -81,12 +81,12 @@
     <Compile Include="Assets\Environment_Terrain Stuff\TerrainComposer2\Scripts\Editor\TC_TerrainAreaEditor.cs" />
     <Compile Include="Assets\Environment_Terrain Stuff\TerrainComposer2\Scripts\Editor\TC_TerrainLayerGUI.cs" />
     <Compile Include="Assets\Environment_Terrain Stuff\TerrainComposer2\Scripts\Editor\TD.cs" />
-    <Compile Include="Assets\Environment_Terrain Stuff\WeatherMaker\Demo\DemoResources\TurbulenceLibrary\Editor\NoiseCreator.cs" />
-    <Compile Include="Assets\Environment_Terrain Stuff\WeatherMaker\Demo\DemoResources\TurbulenceLibrary\Editor\NoiseStrings2D.cs" />
-    <Compile Include="Assets\Environment_Terrain Stuff\WeatherMaker\Demo\DemoResources\TurbulenceLibrary\Editor\NoiseStrings3D.cs" />
-    <Compile Include="Assets\Environment_Terrain Stuff\WeatherMaker\Prefab\Editor\WeatherMakerEditorCommands.cs" />
-    <Compile Include="Assets\Environment_Terrain Stuff\WeatherMaker\Prefab\Editor\WeatherMakerLightningBoltEditor.cs" />
     <Compile Include="Assets\Packs\com\heparo\terrain\toolkit\editor\TerrainToolkitEditor.cs" />
+    <Compile Include="Assets\WeatherMaker\Demo\DemoResources\TurbulenceLibrary\Editor\NoiseCreator.cs" />
+    <Compile Include="Assets\WeatherMaker\Demo\DemoResources\TurbulenceLibrary\Editor\NoiseStrings2D.cs" />
+    <Compile Include="Assets\WeatherMaker\Demo\DemoResources\TurbulenceLibrary\Editor\NoiseStrings3D.cs" />
+    <Compile Include="Assets\WeatherMaker\Prefab\Editor\WeatherMakerEditorCommands.cs" />
+    <Compile Include="Assets\WeatherMaker\Prefab\Editor\WeatherMakerLightningBoltEditor.cs" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>E:/Unity/ASMBomber/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
