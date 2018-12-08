@@ -11,11 +11,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d4dbdbf04c6ebf4ab9bbaaea3ca6638, type: 3}
   m_Name: WeatherMakerDayNightCycleProfile_Default
   m_EditorClassIdentifier: 
-  Speed: 150
-  NightSpeed: 150
+  Speed: 125
+  NightSpeed: 125
   UpdateInterval: 0
-  TimeOfDay: 12516
-  TimeOfDayLabel: 03:28 AM
+  TimeOfDay: 84560
+  TimeOfDayLabel: 11:29 PM
   Year: 2018
   Month: 1
   Day: 31
@@ -53,8 +53,8 @@ MonoBehaviour:
     m_Mode: 0
     m_NumColorKeys: 6
     m_NumAlphaKeys: 2
-  NightSkyTintColor: {r: 0.49733, g: 0.8301887, b: 0.80093086, a: 1}
-  NightSkyAddColor: {r: 0.49803925, g: 0.8313726, b: 0.8000001, a: 1}
+  NightSkyTintColor: {r: 0.120772526, g: 0.120772526, b: 0.4339623, a: 1}
+  NightSkyAddColor: {r: 0.32368526, g: 0.14124244, b: 0.4339623, a: 1}
   AmbientColorMode: 8
   DayAmbientColor:
     serializedVersion: 2
@@ -325,7 +325,7 @@ MonoBehaviour:
     m_Mode: 0
     m_NumColorKeys: 2
     m_NumAlphaKeys: 2
-  NightAmbientColorIntensity: 0.004
+  NightAmbientColorIntensity: 0.37
   NightAmbientColorSky:
     serializedVersion: 2
     key0: {r: 0.5808823, g: 0.5837729, b: 1, a: 1}
@@ -355,7 +355,7 @@ MonoBehaviour:
     m_Mode: 0
     m_NumColorKeys: 2
     m_NumAlphaKeys: 2
-  NightAmbientColorSkyIntensity: 0.004
+  NightAmbientColorSkyIntensity: 0.1
   NightAmbientColorGround:
     serializedVersion: 2
     key0: {r: 0.5808823, g: 0.5837729, b: 1, a: 1}
@@ -385,10 +385,10 @@ MonoBehaviour:
     m_Mode: 0
     m_NumColorKeys: 2
     m_NumAlphaKeys: 2
-  NightAmbientColorGroundIntensity: 0
+  NightAmbientColorGroundIntensity: 0.24
   NightAmbientColorEquator:
     serializedVersion: 2
-    key0: {r: 0.5808823, g: 0.5837729, b: 1, a: 1}
+    key0: {r: 0.016687432, g: 0.018735668, b: 0.23584908, a: 1}
     key1: {r: 0.5808823, g: 0.5837729, b: 1, a: 1}
     key2: {r: 0, g: 0, b: 0, a: 0}
     key3: {r: 0, g: 0, b: 0, a: 0}
@@ -415,7 +415,7 @@ MonoBehaviour:
     m_Mode: 0
     m_NumColorKeys: 2
     m_NumAlphaKeys: 2
-  NightAmbientColorEquatorIntensity: 0
+  NightAmbientColorEquatorIntensity: 0.15
   SunTintColorGradient:
     serializedVersion: 2
     key0: {r: 1, g: 0.95820487, b: 0.5330188, a: 1}

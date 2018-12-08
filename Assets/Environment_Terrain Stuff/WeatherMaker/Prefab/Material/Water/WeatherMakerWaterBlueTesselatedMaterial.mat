@@ -216,7 +216,7 @@ Material:
     - _VolumetricShadowPower: 1
     - _VolumetricShadowPowerFade: 0.02
     - _WaterDepth: 40.98077
-    - _WaterDepthThreshold: 0.024414062
+    - _WaterDepthThreshold: -3.4028235e+38
     - _WaterDitherLevel: 0
     - _WaterFogDensity: 0.079
     - _WaterShadowStrength: 32
