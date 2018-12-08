@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/_Tobby/SecondSeasons.unity
+- path: Assets/Antonio/Scene/Test.unity
   isLoaded: 1
   isActive: 1

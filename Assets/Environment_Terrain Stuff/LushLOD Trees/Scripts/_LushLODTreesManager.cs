@@ -1275,7 +1275,7 @@ public class _LushLODTreesManager : MonoBehaviour
             ReferenceEquals(SpecificTree, null) != true &&
             SpecificTree.Equals(null) != true)
         {
-            SpecificTreePrefab = PrefabUtility.GetPrefabParent(SpecificTree.gameObject);
+            SpecificTreePrefab = PrefabUtility.GetCorrespondingObjectFromSource(SpecificTree.gameObject);
             SpecificTreeUniqueID = SpecificTree.Original_UniqueID;
         }
 
@@ -1422,7 +1422,7 @@ public class _LushLODTreesManager : MonoBehaviour
                 }
                 else
                 {
-                    if (PrefabUtility.GetPrefabParent(tree.gameObject) == SpecificTreePrefab)
+                    if (PrefabUtility.GetCorrespondingObjectFromSource(tree.gameObject) == SpecificTreePrefab)
                     {
                         //PrefabUtility.ReconnectToLastPrefab(tree.gameObject);
                         PrefabUtility.RevertPrefabInstance(tree.gameObject);

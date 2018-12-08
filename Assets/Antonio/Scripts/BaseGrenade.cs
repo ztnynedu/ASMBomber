@@ -4,16 +4,20 @@ using UnityEngine;
 
 public class BaseGrenade : MonoBehaviour
 {
+    private PlayerController player;
+
     [SerializeField] GameObject explosionEffect;
     [SerializeField] float blastRadius, explosionForce, delay;
 
     float countdown;
+    float dist;
 
     bool hasExploded;
 
 	// Use this for initialization
 	void Start ()
     {
+        player = GetComponent<PlayerController>();
         countdown = delay;
         hasExploded = false;
 	}
@@ -43,8 +47,28 @@ public class BaseGrenade : MonoBehaviour
             {
                 rb.AddExplosionForce(explosionForce, transform.position, blastRadius);
             }
+
+            if (nearbyObject.tag == "Player")
+            {
+                DamagePlayer();
+            }
         }
 
         Destroy(gameObject);
+    }
+
+    void DamagePlayer()
+    {
+        dist = Vector3.Distance(player.transform.position, transform.position);
+
+        if (dist > blastRadius)
+        {
+            return;
+        }
+
+        else if (dist <= blastRadius)
+        {
+            //player.PlayerHealth -= 0.9f;
+        }
     }
 }
