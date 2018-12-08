@@ -8,13 +8,14 @@ Material:
   m_PrefabInternal: {fileID: 0}
   m_Name: WeatherMakerShadowMapSamplerMaterial
   m_Shader: {fileID: 4800000, guid: f7fc4d17a59fce349ab5848466a3bd5b, type: 3}
-  m_ShaderKeywords: BLUR17
+  m_ShaderKeywords: BLUR17 WATER_REFLECTIVE
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
-  disabledShaderPasses: []
+  disabledShaderPasses:
+  - FORWARDADD
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
