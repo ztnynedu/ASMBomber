@@ -14,8 +14,8 @@ MonoBehaviour:
   Speed: 100
   NightSpeed: 100
   UpdateInterval: 0
-  TimeOfDay: 54000
-  TimeOfDayLabel: 03:00 PM
+  TimeOfDay: 25527
+  TimeOfDayLabel: 07:05 AM
   Year: 1948
   Month: 1
   Day: 31
