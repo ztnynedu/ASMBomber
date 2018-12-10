@@ -6,6 +6,10 @@ using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using UnityEngine.Events;
 
+// Zayne
+using UnityEngine.Networking;
+using UnityEditor.Networking;
+
 public class menu_MenuFunctionality : MonoBehaviour {
 
     public static menu_MenuFunctionality MF;
@@ -28,6 +32,7 @@ public class menu_MenuFunctionality : MonoBehaviour {
     [SerializeField]
     public bool IsMainMenu;
 
+
     private void Awake()
     {
         if (MF == null)
@@ -38,7 +43,7 @@ public class menu_MenuFunctionality : MonoBehaviour {
         {
             Destroy(menu_MenuFunctionality.MF.gameObject);
         }
-        DontDestroyOnLoad(this.gameObject);
+        //DontDestroyOnLoad(this.gameObject);
     }
     // Use this for initialization
     void Start () {
@@ -50,7 +55,12 @@ public class menu_MenuFunctionality : MonoBehaviour {
         }
         else if (IsMainMenu == false)
         {
-            InGameUIActivate();
+
+            // Zayne
+            if (InGameUI != null)
+            {
+                InGameUIActivate();
+            }
         }
 	}
 	
@@ -65,28 +75,42 @@ public class menu_MenuFunctionality : MonoBehaviour {
     {
             Credits.SetActive(false);
             PauseMenu.SetActive(false);
+
+        // Zayne
+        if (InGameUI != null)
+        {
             InGameUI.SetActive(false);
+        }
             OptionsMenu.SetActive(false);
             ModeSelect.SetActive(false);
 
         Time.timeScale = 1;
 
-        MainMenu.SetActive(true);
+        //MainMenu.SetActive(true);
     }
     public void ModeSelectActivate()
     {
             Credits.SetActive(false);
             PauseMenu.SetActive(false);
+
+        // Zayne
+        if (InGameUI != null)
+        {
             InGameUI.SetActive(false);
+        }
             OptionsMenu.SetActive(false);
             MainMenu.SetActive(false);
-
-        ModeSelect.SetActive(true);
+            ModeSelect.SetActive(true);    
     }
     public void CreditsActivate()
     {
             PauseMenu.SetActive(false);
+
+        // Zayne
+        if (InGameUI != null)
+        {
             InGameUI.SetActive(false);
+        }
             OptionsMenu.SetActive(false);
             ModeSelect.SetActive(false);
             MainMenu.SetActive(false);
@@ -97,7 +121,12 @@ public class menu_MenuFunctionality : MonoBehaviour {
     {
             Credits.SetActive(false);
             PauseMenu.SetActive(false);
+
+        // Zayne
+        if(InGameUI != null)
+        {
             InGameUI.SetActive(false);
+        }
             ModeSelect.SetActive(false);
             MainMenu.SetActive(false);
 
@@ -107,18 +136,27 @@ public class menu_MenuFunctionality : MonoBehaviour {
     }
     public void InGameUIActivate()
     {
-            Credits.SetActive(false);
-            PauseMenu.SetActive(false);
-            OptionsMenu.SetActive(false);
-            ModeSelect.SetActive(false);
-            MainMenu.SetActive(false);
+        Credits.SetActive(false);
+        PauseMenu.SetActive(false);
+        OptionsMenu.SetActive(false);
+        ModeSelect.SetActive(false);
+        MainMenu.SetActive(false);
 
-       InGameUI.SetActive(true);
+        // Zayne
+        if (InGameUI != null)
+        {
+            InGameUI.SetActive(true);
+        }
     }
     public void PauseActivate()
     {
             Credits.SetActive(false);
+
+        // Zayne
+        if (InGameUI != null)
+        {
             InGameUI.SetActive(false);
+        }
             OptionsMenu.SetActive(false);
             ModeSelect.SetActive(false);
             MainMenu.SetActive(false);
@@ -152,7 +190,12 @@ public class menu_MenuFunctionality : MonoBehaviour {
                 Paused = false;
                 Cursor.lockState = CursorLockMode.Locked;
                 Cursor.visible = false;
-                InGameUIActivate();
+
+                // Zayne
+                if (InGameUI != null)
+                {
+                    InGameUIActivate();
+                }
 
                 Debug.Log("Game Is Unpaused");
                 Time.timeScale = 1;
@@ -172,8 +215,30 @@ public class menu_MenuFunctionality : MonoBehaviour {
     // [Loads Test Scene]
     public void LoadTest(string Test)
     {
-        SceneManager.LoadScene(Test);
-        Destroy(gameObject);
+        //SceneManager.LoadScene(Test);
+        //Destroy(gameObject);
+
+        // Zayne
+        NetworkManager.singleton.StartHost();
+    }
+
+    // Zayne
+    public void StartClient()
+    {
+        NetworkManager.singleton.StartClient();
+    }
+
+    // Zayne
+    public void Disconnect()
+    {
+        if (NetworkManager.singleton.IsClientConnected() == true)
+        {
+            NetworkManager.singleton.StopHost();
+        }
+        else
+        {
+            NetworkManager.singleton.StopClient();
+        }
     }
 
     // [Loads Menu Scene]

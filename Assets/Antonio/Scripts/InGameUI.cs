@@ -35,7 +35,7 @@ public class InGameUI : MonoBehaviour {
             Destroy(menu_MenuFunctionality.MF.gameObject);
         }
 
-        DontDestroyOnLoad(gameObject);
+        //DontDestroyOnLoad(gameObject);
     }
 	
 	// Update is called once per frame
