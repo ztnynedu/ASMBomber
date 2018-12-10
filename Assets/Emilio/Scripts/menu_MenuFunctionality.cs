@@ -32,9 +32,12 @@ public class menu_MenuFunctionality : MonoBehaviour {
     [SerializeField]
     public bool IsMainMenu;
 
+    public Scene currentScene;
 
     private void Awake()
     {
+        currentScene = SceneManager.GetActiveScene();
+
         if (MF == null)
         {
             MF = this;
@@ -68,6 +71,8 @@ public class menu_MenuFunctionality : MonoBehaviour {
 	void Update () {
         PauseButtonActivate();
         WasGamePaused();
+
+        
     }
 
     // [All Menu UI Activations Below. Yes I know, this is messy.]
@@ -86,7 +91,10 @@ public class menu_MenuFunctionality : MonoBehaviour {
 
         Time.timeScale = 1;
 
-        //MainMenu.SetActive(true);
+        if (currentScene.name == "MainMenu")
+        {
+            MainMenu.SetActive(true);
+        }
     }
     public void ModeSelectActivate()
     {
@@ -242,9 +250,9 @@ public class menu_MenuFunctionality : MonoBehaviour {
     }
 
     // [Loads Menu Scene]
-    public void LoadMainMenu(string WeOutHereTesting)
+    public void LoadMainMenu(string MainMenu)
     {
-        SceneManager.LoadScene(WeOutHereTesting);
+        SceneManager.LoadScene(MainMenu);
         MainMenuActivate();
         Destroy(gameObject);
         //SceneManager.UnloadScene(Test);
