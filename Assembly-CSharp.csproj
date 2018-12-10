@@ -61,6 +61,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\_Tobby\Animation Controllers\TSScripts\P1S.cs" />
+    <Compile Include="Assets\_Tobby\Animation Controllers\TSScripts\TPcontrolDONTUSE.cs" />
+    <Compile Include="Assets\_Tobby\AnimMove.cs" />
+    <Compile Include="Assets\_Tobby\MovingAnim.cs" />
+    <Compile Include="Assets\_Tobby\PMDirectional.cs" />
+    <Compile Include="Assets\_Tobby\TestJunkSMB.cs" />
     <Compile Include="Assets\Antonio\Scripts\BaseGrenade.cs" />
     <Compile Include="Assets\Antonio\Scripts\DestroyParticle.cs" />
     <Compile Include="Assets\Antonio\Scripts\InGameUI.cs" />
@@ -195,7 +201,6 @@
     <Compile Include="Assets\Packs\Character Model Packs\Linhi Character\Linhi Character\Scrips\ThirdPersonUserControl.cs" />
     <Compile Include="Assets\Packs\com\heparo\terrain\toolkit\scripts\TerrainToolkit.cs" />
     <Compile Include="Assets\Particle Pack\EffectExamples\Misc Effects\Scripts\SpawnEffect.cs" />
-    <Compile Include="Assets\TestJunkSMB.cs" />
     <Compile Include="Assets\WeatherMaker\Demo\DemoResources\Scripts\WeatherMakerDemoNoiseScript.cs" />
     <Compile Include="Assets\WeatherMaker\Demo\DemoResources\Scripts\WeatherMakerDemoScript2D.cs" />
     <Compile Include="Assets\WeatherMaker\Demo\DemoResources\Scripts\WeatherMakerDemoScriptCloudMask.cs" />

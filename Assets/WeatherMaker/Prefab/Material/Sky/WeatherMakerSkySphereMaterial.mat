@@ -72,7 +72,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _NightTex:
-        m_Texture: {fileID: 2800000, guid: 8fc72e4a1d2fa1c4182c5c474a2de84f, type: 3}
+        m_Texture: {fileID: 2800000, guid: 4ab898da75a8d47458b3daa046db5a04, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
@@ -125,13 +125,13 @@ Material:
     - _InvFade: 1
     - _Metallic: 0
     - _Mode: 0
-    - _NightIntensity: 0.2
+    - _NightIntensity: 1.2
     - _NightMultiplier: 0
     - _NightSkyMultiplier: 0.25
-    - _NightTwinkleMinimum: 0.1
-    - _NightTwinkleRandomness: 1.15
-    - _NightTwinkleSpeed: 11
-    - _NightTwinkleVariance: 0.1
+    - _NightTwinkleMinimum: 0.005
+    - _NightTwinkleRandomness: 2.5
+    - _NightTwinkleSpeed: 2.5
+    - _NightTwinkleVariance: 5.48
     - _NightVisibilityThreshold: 0
     - _OcclusionStrength: 1
     - _OffsetX: 1

@@ -88,6 +88,7 @@
     <Compile Include="Assets\WeatherMaker\Prefab\Editor\WeatherMakerEditorCommands.cs" />
     <Compile Include="Assets\WeatherMaker\Prefab\Editor\WeatherMakerLightningBoltEditor.cs" />
     <Reference Include="UnityEditor.StandardEvents">
+      <HintPath>E:/Unity/ASMBomber/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>E:/Unity/ASMBomber/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
