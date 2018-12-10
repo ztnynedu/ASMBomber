@@ -1219,7 +1219,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &1818857635167790
 GameObject:
   m_ObjectHideFlags: 1
@@ -4013,7 +4013,7 @@ MonoBehaviour:
   MainMenu: {fileID: 1804521069416582}
   ModeSelect: {fileID: 1428172226689434}
   Credits: {fileID: 1252686903914562}
-  InGameUI: {fileID: 0}
+  InGameUI: {fileID: 1954528453546252}
   PauseMenu: {fileID: 1787832187478016}
   OptionsMenu: {fileID: 1867458129062948}
   Paused: 0
