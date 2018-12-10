@@ -333,35 +333,9 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: 114857115883385936, guid: e1ef1f255db4cb64bb3d03aadffe6f33,
-        type: 2}
-      propertyPath: showGUI
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 114857115883385936, guid: e1ef1f255db4cb64bb3d03aadffe6f33, type: 2}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e1ef1f255db4cb64bb3d03aadffe6f33, type: 2}
   m_IsPrefabAsset: 0
---- !u!1 &1071679827 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1601935771298956, guid: e1ef1f255db4cb64bb3d03aadffe6f33,
-    type: 2}
-  m_PrefabInternal: {fileID: 1049353099}
---- !u!114 &1071679828
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1071679827}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 227461547, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  manager: {fileID: 0}
-  showGUI: 1
-  offsetX: 0
-  offsetY: 0
 --- !u!1 &1102946718
 GameObject:
   m_ObjectHideFlags: 0
