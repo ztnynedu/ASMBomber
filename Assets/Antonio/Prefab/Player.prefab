@@ -30,20 +30,20 @@ GameObject:
   - component: {fileID: 114917794925640948}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1 &1513351058692094
+--- !u!1 &1791475304656410
 GameObject:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4307040135023956}
-  - component: {fileID: 114805619459167892}
+  - component: {fileID: 4444186370990266}
+  - component: {fileID: 114171511404747106}
   m_Layer: 0
   m_Name: GrenadeSpawnLocation
   m_TagString: Untagged
@@ -99,12 +99,12 @@ Transform:
   m_Father: {fileID: 4848995768094266}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &4307040135023956
+--- !u!4 &4444186370990266
 Transform:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1513351058692094}
+  m_GameObject: {fileID: 1791475304656410}
   m_LocalRotation: {x: -0.48866156, y: -0.5110868, z: 0.4886618, w: -0.511087}
   m_LocalPosition: {x: 0.28029183, y: -0.15655965, z: 0}
   m_LocalScale: {x: 10.511126, y: 10.49534, z: 2.6754975}
@@ -136,7 +136,7 @@ Transform:
   m_LocalPosition: {x: 0, y: -0.56300014, z: 0.53999996}
   m_LocalScale: {x: 0.09513737, y: 0.37598094, z: 0.09513737}
   m_Children:
-  - {fileID: 4307040135023956}
+  - {fileID: 4444186370990266}
   m_Father: {fileID: 4152902976268312}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -236,7 +236,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
 --- !u!81 &81170800389192388
 AudioListener:
   m_ObjectHideFlags: 1
@@ -244,6 +244,39 @@ AudioListener:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1890454354066796}
   m_Enabled: 1
+--- !u!114 &114171511404747106
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1791475304656410}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a34b75710a2dbe4296dbe73d09dbec3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  accuracy: 0.98
+  iterationLimit: 150
+  predictionType: 3
+  raycastMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  checkForCollision: 1
+  debugLineMode: 2
+  drawDebugOnStart: 0
+  drawDebugOnUpdate: 0
+  drawDebugOnPrediction: 0
+  debugLineDuration: 4
+  debugLineUpdateRate: 0
+  lineSortingLayer: 0
+  lineSortingOrder: 0
+  lineWidth: 0.05
+  lineStartColor: {r: 1, g: 1, b: 1, a: 1}
+  lineEndColor: {r: 1, g: 1, b: 1, a: 1}
+  lineShader: {fileID: 0}
+  lineTexture: {fileID: 0}
+  textureTilingMult: 1
+  predictionPoints: []
 --- !u!114 &114519179799749322
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -288,14 +321,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health:
-    bar: {fileID: 0}
-    maxValue: 0
-    currentValue: 0
-  grenade: {fileID: 0}
+    bar: {fileID: 114516729629510784, guid: 5b50cb3119ea08a4da53c7521082446d, type: 2}
+    maxValue: 100
+    currentValue: 100
+  grenade: {fileID: 114819443617625080, guid: 2b6dca66c398ec44aba5ea81218c856b, type: 2}
   grenadePrefab: {fileID: 1685150668702712, guid: 2b6dca66c398ec44aba5ea81218c856b,
     type: 2}
-  grenadeSpawnLocation: {fileID: 4307040135023956}
-  throwForce: 0
+  grenadeSpawnLocation: {fileID: 4444186370990266}
+  throwForce: 5
 --- !u!114 &114600737015590572
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -307,7 +340,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a938d3d1658e81547ba4adfc0d7bc8eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  launchPoint: {fileID: 0}
+  launchPoint: {fileID: 4444186370990266}
   infoText: {fileID: 0}
   launch: 0
   force: 150
@@ -324,39 +357,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mouseSensitivity: 80
---- !u!114 &114805619459167892
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1513351058692094}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a34b75710a2dbe4296dbe73d09dbec3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  accuracy: 0.98
-  iterationLimit: 150
-  predictionType: 3
-  raycastMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  checkForCollision: 1
-  debugLineMode: 2
-  drawDebugOnStart: 0
-  drawDebugOnUpdate: 0
-  drawDebugOnPrediction: 0
-  debugLineDuration: 4
-  debugLineUpdateRate: 0
-  lineSortingLayer: 0
-  lineSortingOrder: 0
-  lineWidth: 0.05
-  lineStartColor: {r: 1, g: 1, b: 1, a: 1}
-  lineEndColor: {r: 1, g: 1, b: 1, a: 1}
-  lineShader: {fileID: 0}
-  lineTexture: {fileID: 0}
-  textureTilingMult: 1
-  predictionPoints: []
 --- !u!114 &114844724758748058
 MonoBehaviour:
   m_ObjectHideFlags: 1

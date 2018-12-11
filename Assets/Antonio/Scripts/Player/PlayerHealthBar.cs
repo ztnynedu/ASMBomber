@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class PlayerHealthBar : MonoBehaviour
 {
-    
+    [SerializeField]
     private float fillAmount;
 
     [SerializeField]
