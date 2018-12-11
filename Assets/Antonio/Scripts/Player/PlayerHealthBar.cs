@@ -2,25 +2,32 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Networking; // Zayne
 
-public class PlayerHealthBar : MonoBehaviour
+public class PlayerHealthBar : NetworkBehaviour // Zayne
 {
-    [SerializeField]
+	//[SyncVar(hook = "OnChangeHealth")] // Zayne
+	[SerializeField]
     private float fillAmount;
 
-    [SerializeField]
+	//[SyncVar] // Zayne
+	[SerializeField]
     private float lerpSpeed;
 
-    [SerializeField]
+	//[SyncVar] // Zayne
+	[SerializeField]
     private Image content;
 
-    [SerializeField]
+	//[SyncVar] // Zayne
+	[SerializeField]
     private Text valueText;
 
-    [SerializeField]
+	//[SyncVar] // Zayne
+	[SerializeField]
     private Color fullColor, lowColor;
 
-    [SerializeField]
+	//[SyncVar] // Zayne
+	[SerializeField]
     private bool lerpColors;
 
     public float MaxValue { get; set; }
@@ -47,6 +54,12 @@ public class PlayerHealthBar : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+		//// Zayne
+		//if(!isServer)
+		//{
+		//	return;
+		//}
+
         HandleBar();
     }
 
@@ -67,4 +80,18 @@ public class PlayerHealthBar : MonoBehaviour
     {
         return (value - inMin) * (outMax - outMin) / (inMax - inMin) + outMin;
     }
+
+	//// Zayne
+	//void OnChangeHealth (float fillAmount)
+	//{
+	//	if (fillAmount != content.fillAmount)
+	//	{
+	//		content.fillAmount = Mathf.Lerp(content.fillAmount, fillAmount, Time.deltaTime * lerpSpeed);
+	//	}
+
+	//	if (lerpColors)
+	//	{
+	//		content.color = Color.Lerp(lowColor, fullColor, fillAmount);
+	//	}
+	//}
 }

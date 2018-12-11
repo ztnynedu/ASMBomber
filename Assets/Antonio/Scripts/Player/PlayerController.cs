@@ -6,7 +6,7 @@ using UnityEngine.Networking; // Zayne
 public class PlayerController : NetworkBehaviour // Zayne
 {
     [SerializeField]
-    private PlayerStats health;
+	private PlayerStats health;
 
     [SerializeField]
     private BaseGrenade grenade;
@@ -55,6 +55,11 @@ public class PlayerController : NetworkBehaviour // Zayne
 
     public void Damage()
     {
+		if(!isServer)
+		{
+			return;
+		}
+
         health.CurrentValue -= grenade.damage;
     }
 
