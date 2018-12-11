@@ -3,14 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Networking;
 
-public class CameraController : NetworkBehaviour
+public class CameraController : MonoBehaviour
 {
-    public Camera cam;
+	public GameObject cam;
 
 	// Use this for initialization
 	void Start ()
     {
-        cam.setactive(true);
+        cam.SetActive(true);
     }
 	
 	// Update is called once per frame
