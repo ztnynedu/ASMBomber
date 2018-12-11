@@ -8,7 +8,7 @@ using UnityEngine.Events;
 
 // Zayne
 using UnityEngine.Networking;
-//using UnityEditor.Networking;
+using UnityEditor.Networking;
 
 public class menu_MenuFunctionality : MonoBehaviour {
 
@@ -24,8 +24,6 @@ public class menu_MenuFunctionality : MonoBehaviour {
     public GameObject InGameUI;
     public GameObject PauseMenu;
     public GameObject OptionsMenu;
-
-    public GameObject Player;
 
     [SerializeField]
     public bool Paused;
@@ -48,9 +46,8 @@ public class menu_MenuFunctionality : MonoBehaviour {
         {
             Destroy(menu_MenuFunctionality.MF.gameObject);
         }
-        //DontDestroyOnLoad(this.gameObject); 
+        //DontDestroyOnLoad(this.gameObject);
     }
-
     // Use this for initialization
     void Start () {
 
@@ -68,17 +65,14 @@ public class menu_MenuFunctionality : MonoBehaviour {
                 InGameUIActivate();
             }
         }
-
-        if (currentScene.name == "Test")
-        {
-            Player.SetActive(true);
-        }
-    }
+	}
 	
 	// Update is called once per frame
 	void Update () {
         PauseButtonActivate();
-        WasGamePaused();   
+        WasGamePaused();
+
+        
     }
 
     // [All Menu UI Activations Below. Yes I know, this is messy.]
@@ -102,7 +96,6 @@ public class menu_MenuFunctionality : MonoBehaviour {
             MainMenu.SetActive(true);
         }
     }
-
     public void ModeSelectActivate()
     {
             Credits.SetActive(false);
@@ -263,11 +256,5 @@ public class menu_MenuFunctionality : MonoBehaviour {
         MainMenuActivate();
         Destroy(gameObject);
         //SceneManager.UnloadScene(Test);
-    }
-
-    public void LoadGame(string Test)
-    {
-        SceneManager.LoadScene(Test);
-        Destroy(gameObject);
     }
 }
