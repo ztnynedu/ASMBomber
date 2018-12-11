@@ -34,7 +34,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &1513351058692094
 GameObject:
   m_ObjectHideFlags: 1
@@ -292,8 +292,9 @@ MonoBehaviour:
     maxValue: 0
     currentValue: 0
   grenade: {fileID: 0}
-  grenadePrefab: {fileID: 0}
-  grenadeSpawnLocation: {fileID: 0}
+  grenadePrefab: {fileID: 1685150668702712, guid: 2b6dca66c398ec44aba5ea81218c856b,
+    type: 2}
+  grenadeSpawnLocation: {fileID: 4307040135023956}
   throwForce: 0
 --- !u!114 &114600737015590572
 MonoBehaviour:

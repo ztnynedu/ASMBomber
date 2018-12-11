@@ -20,7 +20,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 4}
-  m_MinSize: {x: 950, y: 300}
+  m_MinSize: {x: 950, y: 521}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -67,8 +67,8 @@ MonoBehaviour:
     y: 0
     width: 403
     height: 1102
-  m_MinSize: {x: 234, y: 492}
-  m_MaxSize: {x: 10004, y: 14042}
+  m_MinSize: {x: 234, y: 471}
+  m_MaxSize: {x: 10004, y: 14021}
   vertical: 1
   controlID: 84
 --- !u!114 &4
@@ -92,7 +92,7 @@ MonoBehaviour:
     y: 0
     width: 2194
     height: 1152
-  m_MinSize: {x: 950, y: 300}
+  m_MinSize: {x: 950, y: 521}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &5
 MonoBehaviour:
@@ -136,10 +136,10 @@ MonoBehaviour:
     y: 30
     width: 2194
     height: 1102
-  m_MinSize: {x: 713, y: 492}
-  m_MaxSize: {x: 18008, y: 14042}
+  m_MinSize: {x: 713, y: 471}
+  m_MaxSize: {x: 18008, y: 14021}
   vertical: 0
-  controlID: 26
+  controlID: 83
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -183,7 +183,7 @@ MonoBehaviour:
   m_MinSize: {x: 202, y: 342}
   m_MaxSize: {x: 4002, y: 8042}
   vertical: 1
-  controlID: 27
+  controlID: 61
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -202,8 +202,8 @@ MonoBehaviour:
     y: 0
     width: 403
     height: 735
-  m_MinSize: {x: 204, y: 221}
-  m_MaxSize: {x: 4004, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
@@ -339,21 +339,21 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 5af6ffff5cf6ffff86f9ffff00000000
+    m_ExpandedIDs: 32e3ffffcafbfffff4ffffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: Main Camera
-      m_OriginalName: Main Camera
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: -2470
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 0
       m_ClientGUIView: {fileID: 9}
     m_SearchString: 
@@ -433,20 +433,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Zayne/Scripts
+    - Assets/Antonio/Scripts
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Zayne/Scripts
+  - Assets/Antonio/Scripts
   m_LastFoldersGridSize: 16
   m_LastProjectPath: C:\Users\tech7\Documents\Unity Projects\Asset Management\ASMBomber
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 535}
-    m_SelectedIDs: 0a480000
-    m_LastClickedID: 18442
-    m_ExpandedIDs: 00000000402d0000662f0000b6300000bc300000a23100002c32000056330000ae3300001a34000046340000c43400000436000098380000b23a0000dc3b00002040000046410000384500006a4600007e46000080480000084a0000d24c0000ce4d0000ec500000ee5100003654000026550000de560000245700002a5700002c5a00006c5b0000b05e0000d45e00003e600000b8600000106100001c610000c4610000b6620000b8690000ba690000bc69000000ca9a3b
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 46120000
+    m_LastClickedID: 4678
+    m_ExpandedIDs: 00000000300c0000560e0000a60f0000ac0f0000921000001c110000461200009e1200000a13000036130000b4130000f414000088170000cc1a0000101f000036200000282400005a2500006e25000070270000f8280000c22b0000be2c0000dc2f0000de3000002633000016340000ce350000143600001a3600001c3900005c3a0000a03d0000c43d00002e3f0000a83f0000004000000c400000b4400000a6410000c06a0000c26a0000c46a000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -474,7 +474,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000402d0000662f0000b6300000bc300000a23100002c32000056330000ae3300001a34000046340000c43400000436000098380000b23a0000dc3b00002040000046410000384500006a4600007e46000080480000084a0000d24c0000ce4d0000ec500000ee5100003654000026550000de560000245700002a5700002c5a00006c5b0000b05e0000d45e00003e600000b8600000106100001c610000c4610000b6620000b8690000ba690000bc690000
+    m_ExpandedIDs: 00000000300c0000560e0000a60f0000ac0f0000921000001c110000461200009e1200000a13000036130000b4130000f414000088170000a2190000cc1a0000101f000036200000282400005a2500006e25000070270000f8280000c22b0000be2c0000dc2f0000de3000002633000016340000ce350000143600001a3600001c3900005c3a0000a03d0000c43d00002e3f0000a83f0000004000000c400000b4400000a6410000c06a0000c26a0000c46a0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -505,18 +505,18 @@ MonoBehaviour:
     m_ExpandedInstanceIDs: 
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: NewBehaviourScript
-      m_OriginalName: NewBehaviourScript
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 27836
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 2}
     m_CreateAssetUtility:
@@ -576,7 +576,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 1
+    m_EnableMouseInput: 0
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
