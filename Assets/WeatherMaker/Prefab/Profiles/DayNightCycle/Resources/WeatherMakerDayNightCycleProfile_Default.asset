@@ -11,14 +11,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d4dbdbf04c6ebf4ab9bbaaea3ca6638, type: 3}
   m_Name: WeatherMakerDayNightCycleProfile_Default
   m_EditorClassIdentifier: 
-  Speed: 100
-  NightSpeed: 100
+  Speed: 200
+  NightSpeed: 200
   UpdateInterval: 0
-  TimeOfDay: 34167
-  TimeOfDayLabel: 09:29 AM
-  Year: 1948
-  Month: 1
-  Day: 31
+  TimeOfDay: 61060
+  TimeOfDayLabel: 04:57 PM
+  Year: 2018
+  Month: 12
+  Day: 22
   AdjustDateWhenDayEnds: 0
   TimeZoneOffsetSeconds: -25200
   Latitude: 44
@@ -299,7 +299,7 @@ MonoBehaviour:
   NightAmbientColor:
     serializedVersion: 2
     key0: {r: 0.5808823, g: 0.5837729, b: 1, a: 1}
-    key1: {r: 0.5808823, g: 0.5837729, b: 1, a: 1}
+    key1: {r: 0, g: 0.0007053411, b: 0.0754717, a: 1}
     key2: {r: 0.3764706, g: 0.007843138, b: 0, a: 0}
     key3: {r: 0.3764706, g: 0.007843138, b: 0, a: 0}
     key4: {r: 0.3764706, g: 0.007843138, b: 0, a: 0}
