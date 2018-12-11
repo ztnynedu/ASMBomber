@@ -2,6 +2,3 @@ sceneSetups:
 - path: Assets/Emilio/Scenes/MainMenu.unity
   isLoaded: 1
   isActive: 1
-- path: Assets/Antonio/Scene/Test.unity
-  isLoaded: 0
-  isActive: 0

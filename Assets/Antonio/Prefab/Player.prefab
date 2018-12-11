@@ -26,6 +26,7 @@ GameObject:
   - component: {fileID: 114844724758748058}
   - component: {fileID: 54187259089485614}
   - component: {fileID: 114519179799749322}
+  - component: {fileID: 114855461311915370}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -117,7 +118,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1339885988185560}
   m_LocalRotation: {x: 0, y: 0.38268343, z: 0, w: 0.92387956}
-  m_LocalPosition: {x: 12.07, y: 26.36, z: 9.8}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4152902976268312}
@@ -289,6 +290,7 @@ MonoBehaviour:
     bar: {fileID: 0}
     maxValue: 100
     currentValue: 100
+  grenade: {fileID: 114819443617625080, guid: 2b6dca66c398ec44aba5ea81218c856b, type: 2}
   grenadePrefab: {fileID: 1685150668702712, guid: 2b6dca66c398ec44aba5ea81218c856b,
     type: 2}
   grenadeSpawnLocation: {fileID: 4307040135023956}
@@ -365,6 +367,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f724ae7deb83a4040a92037c1c1fa3dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114855461311915370
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1339885988185560}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1768714887, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_TransformSyncMode: 3
+  m_SendInterval: 0.1
+  m_SyncRotationAxis: 7
+  m_RotationSyncCompression: 0
+  m_SyncSpin: 0
+  m_MovementTheshold: 0.001
+  m_VelocityThreshold: 0.0001
+  m_SnapThreshold: 5
+  m_InterpolateRotation: 1
+  m_InterpolateMovement: 1
 --- !u!143 &143859028795206248
 CharacterController:
   m_ObjectHideFlags: 1

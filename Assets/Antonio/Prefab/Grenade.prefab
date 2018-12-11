@@ -117,6 +117,8 @@ MonoBehaviour:
   blastRadius: 10
   explosionForce: 1500
   delay: 1.5
+  Player: {fileID: 1339885988185560, guid: 20d2a499be15f8a4689af8f8aa72f6f1, type: 2}
+  damage: 20
 --- !u!135 &135926536847975286
 SphereCollider:
   m_ObjectHideFlags: 1

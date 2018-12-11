@@ -14,6 +14,7 @@ public class PlayerMovement : MonoBehaviour
     
     //Grounded floats
     private float groundedStandardSpeed = 7.5F;
+    private float groundPowerupSpeed = 10.0f;
     private float groundedSpecialSpeed = 13.0f;
 
     //Dodging floats
