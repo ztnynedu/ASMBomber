@@ -282,6 +282,7 @@
      <Compile Include="Assets\WeatherMaker\Prefab\Scripts\Weather\WeatherMakerWeatherZoneScript.cs" />
      <Compile Include="Assets\WeatherMaker\Prefab\Scripts\Weather\WeatherMakerWindProfileScript.cs" />
      <Compile Include="Assets\WeatherMaker\Prefab\Scripts\Weather\WeatherMakerWindScript.cs" />
+     <Compile Include="Assets\Zayne\Scripts\CameraController.cs" />
      <None Include="Assets\WeatherMaker\Prefab\Shaders\WeatherMakerTesselationShaderInclude.cginc" />
      <None Include="Assets\Environment_Terrain Stuff\LushLOD Trees\Internal Files\Shaders\Resources\Tree_Leaves4_Deferred.shader" />
      <None Include="Assets\WeatherMaker\Prefab\Shaders\WeatherMakerAdditiveSoftTintableShader.shader" />
