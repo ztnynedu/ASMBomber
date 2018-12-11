@@ -1,8 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Networking; // Zayne
 
-public class PlayerController : MonoBehaviour 
+public class PlayerController : NetworkBehaviour // Zayne
 {
     [SerializeField]
     private PlayerStats health;
@@ -27,19 +28,29 @@ public class PlayerController : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
     {
+		// Zayne
+		if(!isLocalPlayer)
+		{
+			return;
+		}
+
         if (Input.GetMouseButtonDown(0))
         {
-            Fire();
+            CmdFire();
         }
 	}
 
-    void Fire()
+	[Command]
+    void CmdFire()
     {
         // Create the Bullet from the Bullet Prefab
         var bullet = (GameObject)Instantiate(grenadePrefab, grenadeSpawnLocation.position, grenadeSpawnLocation.rotation);
 
         // Add velocity to the bullet
         bullet.GetComponent<Rigidbody>().AddForce(Camera.main.transform.forward * throwForce, ForceMode.Impulse);
+
+		// Zayne
+		NetworkServer.Spawn(bullet);
     }
 
     public void Damage()
@@ -56,4 +67,10 @@ public class PlayerController : MonoBehaviour
     //        rb.AddForce(transform.forward * throwForce, ForceMode.VelocityChange);
     //    }
     //}
+
+	// Zayne
+	public override void OnStartLocalPlayer()
+	{
+		GetComponent<MeshRenderer>().material.color = Color.blue;
+	}
 }
