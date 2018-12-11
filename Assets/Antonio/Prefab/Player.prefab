@@ -60,6 +60,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4949397340215744}
   - component: {fileID: 114600737015590572}
+  - component: {fileID: 114578260516377624}
+  - component: {fileID: 114121421005030506}
   m_Layer: 0
   m_Name: Launcher
   m_TagString: Untagged
@@ -244,6 +246,27 @@ AudioListener:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1890454354066796}
   m_Enabled: 1
+--- !u!114 &114121421005030506
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1873546775380202}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1768714887, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_TransformSyncMode: 1
+  m_SendInterval: 0.1
+  m_SyncRotationAxis: 7
+  m_RotationSyncCompression: 0
+  m_SyncSpin: 0
+  m_MovementTheshold: 0.001
+  m_VelocityThreshold: 0.0001
+  m_SnapThreshold: 5
+  m_InterpolateRotation: 1
+  m_InterpolateMovement: 1
 --- !u!114 &114171511404747106
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -329,6 +352,38 @@ MonoBehaviour:
     type: 2}
   grenadeSpawnLocation: {fileID: 4444186370990266}
   throwForce: 5
+--- !u!114 &114578260516377624
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1873546775380202}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 32
+    i1: 210
+    i2: 164
+    i3: 153
+    i4: 190
+    i5: 21
+    i6: 248
+    i7: 164
+    i8: 104
+    i9: 154
+    i10: 248
+    i11: 248
+    i12: 170
+    i13: 114
+    i14: 246
+    i15: 241
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 1
 --- !u!114 &114600737015590572
 MonoBehaviour:
   m_ObjectHideFlags: 1
