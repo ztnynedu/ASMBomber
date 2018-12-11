@@ -24,6 +24,8 @@ GameObject:
   - component: {fileID: 135926536847975286}
   - component: {fileID: 114819443617625080}
   - component: {fileID: 54102460203176444}
+  - component: {fileID: 114158878302265292}
+  - component: {fileID: 114352195290390040}
   m_Layer: 0
   m_Name: Grenade
   m_TagString: Untagged
@@ -101,6 +103,59 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &114158878302265292
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1685150668702712}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 43
+    i1: 109
+    i2: 202
+    i3: 102
+    i4: 195
+    i5: 152
+    i6: 236
+    i7: 68
+    i8: 171
+    i9: 165
+    i10: 234
+    i11: 129
+    i12: 33
+    i13: 140
+    i14: 133
+    i15: 107
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 0
+--- !u!114 &114352195290390040
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1685150668702712}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1768714887, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_TransformSyncMode: 3
+  m_SendInterval: 0.1
+  m_SyncRotationAxis: 7
+  m_RotationSyncCompression: 0
+  m_SyncSpin: 0
+  m_MovementTheshold: 0.001
+  m_VelocityThreshold: 0.0001
+  m_SnapThreshold: 5
+  m_InterpolateRotation: 1
+  m_InterpolateMovement: 1
 --- !u!114 &114819443617625080
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -117,6 +172,8 @@ MonoBehaviour:
   blastRadius: 10
   explosionForce: 1500
   delay: 1.5
+  Player: {fileID: 1339885988185560, guid: 20d2a499be15f8a4689af8f8aa72f6f1, type: 2}
+  damage: 20
 --- !u!135 &135926536847975286
 SphereCollider:
   m_ObjectHideFlags: 1

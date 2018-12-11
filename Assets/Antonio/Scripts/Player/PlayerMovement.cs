@@ -1,8 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Networking; // Zayne
 
-public class PlayerMovement : MonoBehaviour
+public class PlayerMovement : NetworkBehaviour // Zayne
 {
 
     CharacterController player;
@@ -14,6 +15,7 @@ public class PlayerMovement : MonoBehaviour
     
     //Grounded floats
     private float groundedStandardSpeed = 7.5F;
+    private float groundPowerupSpeed = 10.0f;
     private float groundedSpecialSpeed = 13.0f;
 
     //Dodging floats
@@ -32,12 +34,20 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         player = GetComponent<CharacterController>();
+
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        Movement();
+		// Zayne
+		if (!isLocalPlayer)
+		{
+			return;
+		}
+
+		Movement();
     }
 
     private void Movement()
