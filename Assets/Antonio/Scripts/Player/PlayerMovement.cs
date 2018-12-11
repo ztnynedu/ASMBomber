@@ -1,8 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Networking; // Zayne
 
-public class PlayerMovement : MonoBehaviour
+public class PlayerMovement : NetworkBehaviour // Zayne
 {
 
     CharacterController player;
@@ -33,12 +34,20 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         player = GetComponent<CharacterController>();
+
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        Movement();
+		// Zayne
+		if (!isLocalPlayer)
+		{
+			retuurn;
+		}
+
+		Movement();
     }
 
     private void Movement()
