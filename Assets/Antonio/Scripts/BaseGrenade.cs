@@ -4,10 +4,14 @@ using UnityEngine;
 
 public class BaseGrenade : MonoBehaviour
 {
-    private PlayerController player;
+    private PlayerController playerInfo;
 
     [SerializeField] GameObject explosionEffect;
     [SerializeField] float blastRadius, explosionForce, delay;
+
+    [SerializeField]GameObject Player;
+
+    public int damage;
 
     float countdown;
     float dist;
@@ -17,7 +21,7 @@ public class BaseGrenade : MonoBehaviour
 	// Use this for initialization
 	void Start ()
     {
-        player = GetComponent<PlayerController>();
+        playerInfo = Player.GetComponent<PlayerController>();
         countdown = delay;
         hasExploded = false;
 	}
@@ -59,16 +63,11 @@ public class BaseGrenade : MonoBehaviour
 
     void DamagePlayer()
     {
-        dist = Vector3.Distance(player.transform.position, transform.position);
+        dist = Vector3.Distance(Player.transform.position, transform.position);
 
-        if (dist > blastRadius)
+        if (dist <= blastRadius)
         {
-            return;
-        }
-
-        else if (dist <= blastRadius)
-        {
-            //player.PlayerHealth -= 0.9f;
+            playerInfo.Damage();
         }
     }
 }

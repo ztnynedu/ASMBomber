@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 198917022394846920}
   - component: {fileID: 114774906786315304}
   - component: {fileID: 199630755385234010}
+  - component: {fileID: 114736475248551976}
   m_Layer: 0
   m_Name: BigExplosion
   m_TagString: Untagged
@@ -259,6 +260,38 @@ Transform:
   m_Father: {fileID: 4388947112716342}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+--- !u!114 &114736475248551976
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1121192042590650}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 225
+    i1: 176
+    i2: 128
+    i3: 50
+    i4: 190
+    i5: 193
+    i6: 107
+    i7: 164
+    i8: 235
+    i9: 26
+    i10: 226
+    i11: 60
+    i12: 189
+    i13: 87
+    i14: 38
+    i15: 100
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 0
 --- !u!114 &114774906786315304
 MonoBehaviour:
   m_ObjectHideFlags: 1

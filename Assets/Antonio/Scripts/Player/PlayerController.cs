@@ -1,15 +1,24 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Networking; // Zayne
 
-public class PlayerController : MonoBehaviour 
+public class PlayerController : NetworkBehaviour // Zayne
 {
     [SerializeField]
-    private PlayerStats health;
+	private PlayerStats health;
 
-    public GameObject grenadePrefab;
+    [SerializeField]
+    private PlayerMovement movement;
+
+    [SerializeField]
+    private BaseGrenade grenade;
+
+    public GameObject grenadePrefab, megaBombPrefab, forceBombPrefab;
     public Transform grenadeSpawnLocation;
     public float throwForce;
+    private float timer;
+    private int grenadeType = 1;
 
     private void Awake()
     {
@@ -18,44 +27,132 @@ public class PlayerController : MonoBehaviour
     // Use this for initialization
     void Start ()
     {
-		
+       
 	}
 	
 	// Update is called once per frame
 	void Update ()
     {
-        if (Input.GetKeyDown(KeyCode.Q))
-        {
-            health.CurrentValue -= 10;
-        }
+        timer += Time.deltaTime;
 
-        if (Input.GetKeyDown(KeyCode.E))
+		// Zayne
+		if(!isLocalPlayer)
+		{
+			return;
+		}
+
+        switch (grenadeType)
         {
-            health.CurrentValue += 10;
+            case 1:
+                CmdBasicGrenadeFire();
+                break;
+            case 2:
+                CmdForceGrenadeFire();
+                break;
+            case 3:
+                CmdMegaBombGrenadeFire();
+                break;
+            default:
+                CmdBasicGrenadeFire();
+                break;
         }
 
         if (Input.GetMouseButtonDown(0))
         {
-            Fire();
+            CmdBasicGrenadeFire();
         }
 	}
 
-    void Fire()
+    private void OnTriggerEnter(Collider entity)
     {
-        // Create the Bullet from the Bullet Prefab
-        var bullet = (GameObject)Instantiate(grenadePrefab, grenadeSpawnLocation.position, grenadeSpawnLocation.rotation);
+        if (entity.tag == "MegaBombPowerup")
+        {
 
-        // Add velocity to the bullet
-        bullet.GetComponent<Rigidbody>().AddForce(Camera.main.transform.forward * throwForce, ForceMode.Impulse);
+            Destroy(entity.gameObject);
+        }
+
+        if (entity.tag == "ForceBombPowerup")
+        {
+
+            Destroy(entity.gameObject);
+        }
+
+        if (entity.tag == "HealthPickup")
+        {
+            health.CurrentValue += 50;
+            Destroy(entity.gameObject);
+        }
+
+        if (entity.tag == "SpeedPickup")
+        {
+            timer = 0;
+            movement.groundedStandardSpeed = 10.0f;
+            Destroy(entity.gameObject);
+
+            SpeedWait();
+        }
     }
 
-    //void ThrowGrenade()
-    //{
-    //    if (Input.GetMouseButtonDown(0))
-    //    {
-    //        GameObject grenade = Instantiate(grenadePrefab, transform.position + new Vector3(1, 0), transform.rotation);
-    //        Rigidbody rb = grenade.GetComponent<Rigidbody>();
-    //        rb.AddForce(transform.forward * throwForce, ForceMode.VelocityChange);
-    //    }
-    //}
+    [Command]
+    void CmdBasicGrenadeFire()
+    {
+        // Create the Bullet from the Bullet Prefab
+        var bullet1 = (GameObject)Instantiate(grenadePrefab, grenadeSpawnLocation.position, grenadeSpawnLocation.rotation);
+
+        // Add velocity to the bullet
+        bullet1.GetComponent<Rigidbody>().AddForce(Camera.main.transform.forward * throwForce, ForceMode.Impulse);
+
+		// Zayne
+		NetworkServer.Spawn(bullet1);
+    }
+
+    [Command]
+    void CmdMegaBombGrenadeFire()
+    {
+        // Create the Bullet from the Bullet Prefab
+        var bullet2 = (GameObject)Instantiate(megaBombPrefab, grenadeSpawnLocation.position, grenadeSpawnLocation.rotation);
+
+        // Add velocity to the bullet
+        bullet2.GetComponent<Rigidbody>().AddForce(Camera.main.transform.forward * throwForce, ForceMode.Impulse);
+
+        // Zayne
+        NetworkServer.Spawn(bullet2);
+    }
+
+    [Command]
+    void CmdForceGrenadeFire()
+    {
+        // Create the Bullet from the Bullet Prefab
+        var bullet3 = (GameObject)Instantiate(forceBombPrefab, grenadeSpawnLocation.position, grenadeSpawnLocation.rotation);
+
+        // Add velocity to the bullet
+        bullet3.GetComponent<Rigidbody>().AddForce(Camera.main.transform.forward * throwForce, ForceMode.Impulse);
+
+        // Zayne
+        NetworkServer.Spawn(bullet3);
+    }
+
+    public void Damage()
+    {
+		if(!isServer)
+		{
+			return;
+		}
+
+        health.CurrentValue -= grenade.damage;
+    }
+
+    private void SpeedWait()
+    {
+        if (timer >= 5)
+        {
+            movement.groundedStandardSpeed = 7.5f;
+        }
+    }
+
+	// Zayne
+	public override void OnStartLocalPlayer()
+	{
+		GetComponent<MeshRenderer>().material.color = Color.blue;
+	}
 }

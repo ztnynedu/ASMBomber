@@ -1,8 +1,9 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using UnityEngine.Networking;
 
-public class LauncherFPS : MonoBehaviour {
+public class LauncherFPS : NetworkBehaviour { // Zayne
 
 	//public GameObject objToLaunch;
 	public Transform launchPoint;
@@ -23,6 +24,12 @@ public class LauncherFPS : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
+
+		// Zayne
+		if(!isLocalPlayer)
+		{
+			return;
+		}
 
 		//input stuff
 		if(Input.GetMouseButtonDown(0))
