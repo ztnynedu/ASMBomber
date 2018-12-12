@@ -14,8 +14,8 @@ MonoBehaviour:
   Speed: 200
   NightSpeed: 200
   UpdateInterval: 0
-  TimeOfDay: 61060
-  TimeOfDayLabel: 04:57 PM
+  TimeOfDay: 0
+  TimeOfDayLabel: 12:00 AM
   Year: 2018
   Month: 12
   Day: 22

@@ -47,12 +47,12 @@ MonoBehaviour:
   DayTexture: {fileID: 0}
   DawnDuskTexture: {fileID: 0}
   NightTexture: {fileID: 2800000, guid: 8fc72e4a1d2fa1c4182c5c474a2de84f, type: 3}
-  NightVisibilityThreshold: 0
-  NightIntensity: 0.3
-  NightTwinkleSpeed: 19.4
-  NightTwinkleVariance: 0.1
-  NightTwinkleMinimum: 0.1
-  NightTwinkleRandomness: 1.15
+  NightVisibilityThreshold: 0.007
+  NightIntensity: 0.5
+  NightTwinkleSpeed: 0.5
+  NightTwinkleVariance: 0.96
+  NightTwinkleMinimum: 0.072
+  NightTwinkleRandomness: 0.67
   RotateAxis: {x: -0.3, y: 0.8, z: -0.3}
   CheckForEclipse: 0
   SkyCameraHeight: 0.0001
