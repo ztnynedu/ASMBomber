@@ -125,14 +125,14 @@ Material:
     - _InvFade: 1
     - _Metallic: 0
     - _Mode: 0
-    - _NightIntensity: 0.3
+    - _NightIntensity: 0.5
     - _NightMultiplier: 0
-    - _NightSkyMultiplier: 0.25
-    - _NightTwinkleMinimum: 0.1
-    - _NightTwinkleRandomness: 1.15
-    - _NightTwinkleSpeed: 19.4
-    - _NightTwinkleVariance: 0.1
-    - _NightVisibilityThreshold: 0
+    - _NightSkyMultiplier: 1
+    - _NightTwinkleMinimum: 0.072
+    - _NightTwinkleRandomness: 0.67
+    - _NightTwinkleSpeed: 0.5
+    - _NightTwinkleVariance: 0.96
+    - _NightVisibilityThreshold: 0.007
     - _OcclusionStrength: 1
     - _OffsetX: 1
     - _OffsetY: 1
