@@ -34,7 +34,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1791475304656410
 GameObject:
   m_ObjectHideFlags: 1
@@ -347,8 +347,13 @@ MonoBehaviour:
     bar: {fileID: 114516729629510784, guid: 5b50cb3119ea08a4da53c7521082446d, type: 2}
     maxValue: 100
     currentValue: 100
+  movement: {fileID: 114844724758748058}
   grenade: {fileID: 114819443617625080, guid: 2b6dca66c398ec44aba5ea81218c856b, type: 2}
   grenadePrefab: {fileID: 1685150668702712, guid: 2b6dca66c398ec44aba5ea81218c856b,
+    type: 2}
+  megaBombPrefab: {fileID: 1685150668702712, guid: 80ded64cefe786442977d24e267a073e,
+    type: 2}
+  forceBombPrefab: {fileID: 1685150668702712, guid: e3068a65731aef6408a3f6a397b3811f,
     type: 2}
   grenadeSpawnLocation: {fileID: 4444186370990266}
   throwForce: 5
@@ -423,6 +428,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f724ae7deb83a4040a92037c1c1fa3dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  groundedStandardSpeed: 7.5
 --- !u!114 &114855461311915370
 MonoBehaviour:
   m_ObjectHideFlags: 1

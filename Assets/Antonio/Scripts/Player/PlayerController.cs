@@ -9,11 +9,16 @@ public class PlayerController : NetworkBehaviour // Zayne
 	private PlayerStats health;
 
     [SerializeField]
+    private PlayerMovement movement;
+
+    [SerializeField]
     private BaseGrenade grenade;
 
-    public GameObject grenadePrefab;
+    public GameObject grenadePrefab, megaBombPrefab, forceBombPrefab;
     public Transform grenadeSpawnLocation;
     public float throwForce;
+    private float timer;
+    private int grenadeType = 1;
 
     private void Awake()
     {
@@ -28,29 +33,103 @@ public class PlayerController : NetworkBehaviour // Zayne
 	// Update is called once per frame
 	void Update ()
     {
+        timer += Time.deltaTime;
+
 		// Zayne
 		if(!isLocalPlayer)
 		{
 			return;
 		}
 
+        switch (grenadeType)
+        {
+            case 1:
+                CmdBasicGrenadeFire();
+                break;
+            case 2:
+                CmdForceGrenadeFire();
+                break;
+            case 3:
+                CmdMegaBombGrenadeFire();
+                break;
+            default:
+                CmdBasicGrenadeFire();
+                break;
+        }
+
         if (Input.GetMouseButtonDown(0))
         {
-            CmdFire();
+            CmdBasicGrenadeFire();
         }
 	}
 
-	[Command]
-    void CmdFire()
+    private void OnTriggerEnter(Collider entity)
+    {
+        if (entity.tag == "MegaBombPowerup")
+        {
+
+            Destroy(entity.gameObject);
+        }
+
+        if (entity.tag == "ForceBombPowerup")
+        {
+
+            Destroy(entity.gameObject);
+        }
+
+        if (entity.tag == "HealthPickup")
+        {
+            health.CurrentValue += 50;
+            Destroy(entity.gameObject);
+        }
+
+        if (entity.tag == "SpeedPickup")
+        {
+            timer = 0;
+            movement.groundedStandardSpeed = 10.0f;
+            Destroy(entity.gameObject);
+
+            SpeedWait();
+        }
+    }
+
+    [Command]
+    void CmdBasicGrenadeFire()
     {
         // Create the Bullet from the Bullet Prefab
-        var bullet = (GameObject)Instantiate(grenadePrefab, grenadeSpawnLocation.position, grenadeSpawnLocation.rotation);
+        var bullet1 = (GameObject)Instantiate(grenadePrefab, grenadeSpawnLocation.position, grenadeSpawnLocation.rotation);
 
         // Add velocity to the bullet
-        bullet.GetComponent<Rigidbody>().AddForce(Camera.main.transform.forward * throwForce, ForceMode.Impulse);
+        bullet1.GetComponent<Rigidbody>().AddForce(Camera.main.transform.forward * throwForce, ForceMode.Impulse);
 
 		// Zayne
-		NetworkServer.Spawn(bullet);
+		NetworkServer.Spawn(bullet1);
+    }
+
+    [Command]
+    void CmdMegaBombGrenadeFire()
+    {
+        // Create the Bullet from the Bullet Prefab
+        var bullet2 = (GameObject)Instantiate(megaBombPrefab, grenadeSpawnLocation.position, grenadeSpawnLocation.rotation);
+
+        // Add velocity to the bullet
+        bullet2.GetComponent<Rigidbody>().AddForce(Camera.main.transform.forward * throwForce, ForceMode.Impulse);
+
+        // Zayne
+        NetworkServer.Spawn(bullet2);
+    }
+
+    [Command]
+    void CmdForceGrenadeFire()
+    {
+        // Create the Bullet from the Bullet Prefab
+        var bullet3 = (GameObject)Instantiate(forceBombPrefab, grenadeSpawnLocation.position, grenadeSpawnLocation.rotation);
+
+        // Add velocity to the bullet
+        bullet3.GetComponent<Rigidbody>().AddForce(Camera.main.transform.forward * throwForce, ForceMode.Impulse);
+
+        // Zayne
+        NetworkServer.Spawn(bullet3);
     }
 
     public void Damage()
@@ -63,15 +142,13 @@ public class PlayerController : NetworkBehaviour // Zayne
         health.CurrentValue -= grenade.damage;
     }
 
-    //void ThrowGrenade()
-    //{
-    //    if (Input.GetMouseButtonDown(0))
-    //    {
-    //        GameObject grenade = Instantiate(grenadePrefab, transform.position + new Vector3(1, 0), transform.rotation);
-    //        Rigidbody rb = grenade.GetComponent<Rigidbody>();
-    //        rb.AddForce(transform.forward * throwForce, ForceMode.VelocityChange);
-    //    }
-    //}
+    private void SpeedWait()
+    {
+        if (timer >= 5)
+        {
+            movement.groundedStandardSpeed = 7.5f;
+        }
+    }
 
 	// Zayne
 	public override void OnStartLocalPlayer()
